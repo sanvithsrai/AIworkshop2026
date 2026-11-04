@@ -1,0 +1,24 @@
+{
+  "name": "sahyadri-placement-hub",
+  "version": "1.0.0",
+  "description": "Sahyadri College of Engineering & Management Centralized Placement & Career Readiness Portal",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "node dev.js",
+    "start": "node server/index.js",
+    "build": "npm run build --prefix client",
+    "test": "node test.js",
+    "server": "node server/index.js",
+    "client": "npm run dev --prefix client"
+  },
+  "keywords": [
+    "sahyadri",
+    "placements",
+    "aptitude",
+    "japanese",
+    "scem",
+    "recruitment"
+  ],
+  "author": "Google DeepMind Advanced Agentic Coding Pair with Sanvith Rai",
+  "license": "MIT"
+}
