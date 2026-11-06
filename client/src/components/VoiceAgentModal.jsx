@@ -121,7 +121,7 @@ export default function VoiceAgentModal({ isOpen, onClose }) {
 
           {/* Animated Glowing Ring & Visualizer */}
           <div className="relative w-28 h-28 mx-auto my-4 flex items-center justify-center">
-            <div className={`absolute inset-0 rounded-full bg-gradient-to-tr from-[#192247] via-[#e50914] to-transparent ${isPlaying ? 'animate-spin' : ''
+            <div className={`absolute inset-0 rounded-full bg-gradient-to-tr from-[#222222] via-[#10b981] to-transparent ${isPlaying ? 'animate-spin' : ''
               } opacity-50 blur-lg`} />
             <div className="relative w-24 h-24 rounded-full bg-black border-2 border-[#e50914] flex items-center justify-center shadow-2xl">
               {isPlaying ? (

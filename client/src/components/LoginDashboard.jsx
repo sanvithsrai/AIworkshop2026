@@ -90,14 +90,14 @@ export default function LoginDashboard({ onNavigateToDashboard, onNavigateToTest
       
       {/* Header Banner */}
       <div className="text-center max-w-3xl mx-auto mb-10">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase mb-3 bg-[#e50914]/15 border border-[#e50914]/40 text-[#e50914]">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase mb-3 bg-[#10b981]/15 border border-[#10b981]/40 text-[#10b981]">
           <Sparkles className="w-3.5 h-3.5" />
           <span>Sahyadri College Single Sign-On (SSO)</span>
         </div>
         <h1 className={`text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight mb-3 ${
           isDark ? 'text-white' : 'text-slate-900'
         }`}>
-          STUDENT & FACULTY <span className="text-[#e50914]">LOGIN DASHBOARD</span>
+          STUDENT & FACULTY <span className="text-[#10b981]">LOGIN DASHBOARD</span>
         </h1>
         <p className={`text-sm sm:text-base leading-relaxed ${isDark ? 'text-[#b3b3b3]' : 'text-slate-600'}`}>
           Authenticate with your official <strong>@sahyadri.edu.in</strong> college email to access customized placement portals. 
@@ -115,7 +115,7 @@ export default function LoginDashboard({ onNavigateToDashboard, onNavigateToTest
               <img
                 src={user.avatar || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150'}
                 alt={user.name}
-                className="w-12 h-12 rounded-full object-cover border-2 border-[#e50914]"
+                className="w-12 h-12 rounded-full object-cover border-2 border-[#10b981]"
               />
               <div>
                 <div className="flex items-center gap-2">
@@ -129,7 +129,7 @@ export default function LoginDashboard({ onNavigateToDashboard, onNavigateToTest
                   </span>
                 </div>
                 <p className={`text-xs ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>{user.email}</p>
-                {user.usn && <p className="text-[11px] font-mono text-[#e50914]">USN: {user.usn}</p>}
+                {user.usn && <p className="text-[11px] font-mono text-[#10b981]">USN: {user.usn}</p>}
               </div>
             </div>
 
@@ -151,7 +151,7 @@ export default function LoginDashboard({ onNavigateToDashboard, onNavigateToTest
               </button>
               <button
                 onClick={logout}
-                className="px-3 py-2 text-xs font-bold text-white bg-[#e50914] hover:bg-[#b80710] rounded flex items-center gap-1.5 shadow-sm transition-all"
+                className="px-3 py-2 text-xs font-bold text-white bg-[#10b981] hover:bg-[#059669] rounded flex items-center gap-1.5 shadow-sm transition-all"
                 title="Sign Out / Logout"
               >
                 <LogOut className="w-3.5 h-3.5 text-white" />
@@ -178,7 +178,7 @@ export default function LoginDashboard({ onNavigateToDashboard, onNavigateToTest
               onClick={() => handleRoleTabChange('student')}
               className={`flex-1 py-2.5 rounded-lg text-xs font-bold flex items-center justify-center gap-2 transition-all ${
                 activeRoleTab === 'student'
-                  ? 'bg-[#e50914] text-white shadow-md'
+                  ? 'bg-[#10b981] text-white shadow-md'
                   : isDark ? 'text-[#808080] hover:text-white' : 'text-slate-600 hover:text-black'
               }`}
             >
@@ -189,7 +189,7 @@ export default function LoginDashboard({ onNavigateToDashboard, onNavigateToTest
               onClick={() => handleRoleTabChange('faculty')}
               className={`flex-1 py-2.5 rounded-lg text-xs font-bold flex items-center justify-center gap-2 transition-all ${
                 activeRoleTab === 'faculty'
-                  ? 'bg-[#e50914] text-white shadow-md'
+                  ? 'bg-[#10b981] text-white shadow-md'
                   : isDark ? 'text-[#808080] hover:text-white' : 'text-slate-600 hover:text-black'
               }`}
             >
@@ -201,7 +201,7 @@ export default function LoginDashboard({ onNavigateToDashboard, onNavigateToTest
           {/* Role Status Tag */}
           <div className="mb-5">
             <span className={`text-xs font-bold uppercase tracking-wider block ${
-              activeRoleTab === 'faculty' ? 'text-purple-400' : 'text-[#e50914]'
+              activeRoleTab === 'faculty' ? 'text-purple-400' : 'text-[#10b981]'
             }`}>
               {activeRoleTab === 'faculty' ? 'Dean & Placement Faculty Access' : 'Undergraduate Scholar Portal'}
             </span>
@@ -266,7 +266,7 @@ export default function LoginDashboard({ onNavigateToDashboard, onNavigateToTest
                   value={email}
                   onChange={e => setEmail(e.target.value)}
                   placeholder={activeRoleTab === 'faculty' ? 'admin@sahyadri.edu.in' : 'sanvith.rai.ci24@sahyadri.edu.in'}
-                  className={`w-full p-2.5 pl-10 rounded-lg text-xs outline-none focus:border-[#e50914] border ${
+                  className={`w-full p-2.5 pl-10 rounded-lg text-xs outline-none focus:border-[#10b981] border ${
                     isDark ? 'bg-[#181818] border-[#2d2d2d] text-white' : 'bg-white border-slate-300 text-slate-900'
                   }`}
                 />
@@ -285,7 +285,7 @@ export default function LoginDashboard({ onNavigateToDashboard, onNavigateToTest
                   value={password}
                   onChange={e => setPassword(e.target.value)}
                   placeholder="Enter password..."
-                  className={`w-full p-2.5 pl-10 rounded-lg text-xs outline-none focus:border-[#e50914] border ${
+                  className={`w-full p-2.5 pl-10 rounded-lg text-xs outline-none focus:border-[#10b981] border ${
                     isDark ? 'bg-[#181818] border-[#2d2d2d] text-white' : 'bg-white border-slate-300 text-slate-900'
                   }`}
                 />
@@ -318,7 +318,7 @@ export default function LoginDashboard({ onNavigateToDashboard, onNavigateToTest
                   setEmail('sanvith.rai.ci24@sahyadri.edu.in');
                   setPassword('SAHYADRI');
                 }}
-                className="px-2.5 py-1 rounded bg-[#e50914]/15 border border-[#e50914]/30 text-[#e50914] text-[10px] font-bold hover:bg-[#e50914]/25"
+                className="px-2.5 py-1 rounded bg-[#10b981]/15 border border-[#10b981]/30 text-[#10b981] text-[10px] font-bold hover:bg-[#10b981]/25"
               >
                 🎓 Student: sanvith.rai.ci24@sahyadri.edu.in (Pass: SAHYADRI)
               </button>
@@ -343,18 +343,18 @@ export default function LoginDashboard({ onNavigateToDashboard, onNavigateToTest
           {/* Faculty Card: Question Management Privilege */}
           <div className={`p-6 rounded-2xl border transition-all ${
             activeRoleTab === 'faculty' 
-              ? 'border-[#e50914] ring-2 ring-[#e50914]/30' 
+              ? 'border-[#10b981] ring-2 ring-[#10b981]/30' 
               : isDark ? 'card-feature-gradient border-[#5a5a5a]/30' : 'bg-white border-slate-200 shadow-sm'
           }`}>
             <div className="flex items-center gap-2.5 mb-3">
-              <div className="w-8 h-8 rounded-lg bg-[#e50914] flex items-center justify-center text-white">
+              <div className="w-8 h-8 rounded-lg bg-[#10b981] flex items-center justify-center text-white">
                 <FileEdit className="w-4 h-4 text-white" />
               </div>
               <div>
                 <h3 className={`text-sm font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>
                   Faculty Question Studio
                 </h3>
-                <span className="text-[10px] text-[#e50914] font-semibold uppercase">Exclusive Privileges</span>
+                <span className="text-[10px] text-[#10b981] font-semibold uppercase">Exclusive Privileges</span>
               </div>
             </div>
 
@@ -377,7 +377,7 @@ export default function LoginDashboard({ onNavigateToDashboard, onNavigateToTest
           {/* Student Card: Preparation Arena */}
           <div className={`p-6 rounded-2xl border transition-all ${
             activeRoleTab === 'student' 
-              ? 'border-[#e50914] ring-2 ring-[#e50914]/30' 
+              ? 'border-[#10b981] ring-2 ring-[#10b981]/30' 
               : isDark ? 'card-feature-gradient border-[#5a5a5a]/30' : 'bg-white border-slate-200 shadow-sm'
           }`}>
             <div className="flex items-center gap-2.5 mb-3">

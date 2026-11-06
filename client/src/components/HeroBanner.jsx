@@ -21,7 +21,7 @@ export default function HeroBanner({
         {isDark ? (
           <>
             {/* Dark Mode Cosmic Gradients */}
-            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] max-w-full h-[350px] bg-gradient-to-tr from-[#192247]/40 via-[#e50914]/15 to-transparent blur-[120px] rounded-full pointer-events-none" />
+            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] max-w-full h-[350px] bg-gradient-to-tr from-neutral-800/40 via-emerald-600/15 to-transparent blur-[120px] rounded-full pointer-events-none" />
             <div className="absolute -top-20 right-0 w-[400px] max-w-full h-[350px] bg-[#210e17]/50 blur-[140px] pointer-events-none" />
             <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-black" />
           </>
@@ -45,17 +45,17 @@ export default function HeroBanner({
               href="https://sahyadri.edu.in"
               target="_blank"
               rel="noreferrer"
-              className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs mb-5 backdrop-blur-sm shadow-sm border transition-all hover:border-[#e50914] group ${
+              className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs mb-5 backdrop-blur-sm shadow-sm border transition-all hover:border-[#10b981] group ${
                 isDark 
-                  ? 'bg-[#192247]/80 border-[#5a5a5a]/50 text-white hover:bg-[#192247]' 
-                  : 'bg-white border-red-200 text-slate-800 hover:bg-slate-50'
+                  ? 'bg-[#1f1f1f] border-[#333333] text-white hover:bg-[#262626] hover:border-slate-600' 
+                  : 'bg-slate-100 border-slate-300 text-slate-800 hover:bg-slate-200'
               }`}
               title="Visit Sahyadri College Official Portal (sahyadri.edu.in)"
             >
-              <span className="w-2 h-2 rounded-full bg-[#e50914] animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
               <span className={`font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>Sahyadri College (SCEM) Placement Arena</span>
               <span className={isDark ? 'text-[#808080]' : 'text-slate-400'}>•</span>
-              <span className="text-[#e50914] font-extrabold flex items-center gap-1">
+              <span className="text-[#10b981] font-extrabold flex items-center gap-1">
                 sahyadri.edu.in <ExternalLink className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
               </span>
             </a>
@@ -72,7 +72,7 @@ export default function HeroBanner({
               }`}>
                 CAMPUS PLACEMENT
               </span>{' '}
-              <span className="text-[#e50914] drop-shadow-[0_0_35px_rgba(229,9,20,0.4)]">PORTAL (SPACE).</span>
+              <span className="text-[#10b981] drop-shadow-[0_0_35px_rgba(16,185,129,0.35)]">PORTAL (SPACE).</span>
             </h1>
 
             {/* Subheading */}
@@ -89,7 +89,7 @@ export default function HeroBanner({
               {/* Primary Hero CTA Button (Netflix Red) */}
               <button
                 onClick={onStartDemoTest}
-                className="btn-netflix-primary px-5 py-3 text-sm sm:text-base font-bold shadow-xl shadow-[#e50914]/30 flex items-center gap-2 rounded group"
+                className="btn-netflix-primary px-5 py-3 text-sm sm:text-base font-bold shadow-xl shadow-[#10b981]/30 flex items-center gap-2 rounded group"
               >
                 <Play className="w-4 h-4 fill-white text-white group-hover:scale-110 transition-transform" />
                 <span className="text-white">Take Free Demo Exam</span>
@@ -101,10 +101,10 @@ export default function HeroBanner({
                 className={`px-4 py-3 rounded font-medium text-sm sm:text-base transition-all flex items-center gap-2 border ${
                   isDark 
                     ? 'bg-black/60 border-[#5a5a5a] text-white hover:border-white hover:bg-[#2d2d2d]/60' 
-                    : 'bg-white border-slate-300 text-slate-800 hover:border-[#e50914] hover:bg-slate-50 shadow-sm'
+                    : 'bg-white border-slate-300 text-slate-800 hover:border-[#10b981] hover:bg-slate-50 shadow-sm'
                 }`}
               >
-                <Globe className="w-4 h-4 text-[#e50914]" />
+                <Globe className="w-4 h-4 text-[#10b981]" />
                 <span>Japan Connect (₹47.24 LPA)</span>
               </button>
 
@@ -115,14 +115,14 @@ export default function HeroBanner({
                 rel="noreferrer"
                 className={`px-4 py-3 rounded font-medium text-sm sm:text-base transition-all flex items-center gap-2 border group ${
                   isDark 
-                    ? 'bg-black/60 border-[#5a5a5a] text-white hover:border-[#e50914] hover:bg-[#2d2d2d]/60' 
-                    : 'bg-white border-slate-300 text-slate-800 hover:border-[#e50914] hover:bg-slate-50 shadow-sm'
+                    ? 'bg-black/60 border-[#5a5a5a] text-white hover:border-[#10b981] hover:bg-[#2d2d2d]/60' 
+                    : 'bg-white border-slate-300 text-slate-800 hover:border-[#10b981] hover:bg-slate-50 shadow-sm'
                 }`}
                 title="Visit Sahyadri College of Engineering & Management Official Website"
               >
                 <img src="/sahyadri-logo.jpg" alt="SCEM" className="w-4 h-4 rounded-sm object-contain" />
                 <span>Visit Official Site</span>
-                <ExternalLink className="w-3.5 h-3.5 text-[#e50914] group-hover:translate-x-0.5 transition-transform" />
+                <ExternalLink className="w-3.5 h-3.5 text-[#10b981] group-hover:translate-x-0.5 transition-transform" />
               </a>
             </div>
 
@@ -133,7 +133,7 @@ export default function HeroBanner({
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
                 placeholder="Search tests (e.g., 'Japanese N5', 'Quantitative', 'Microsoft DSA')..."
-                className={`w-full rounded-lg px-4 py-2.5 pl-10 text-xs sm:text-sm focus:outline-none focus:border-[#e50914] focus:ring-1 focus:ring-[#e50914] transition-all border ${
+                className={`w-full rounded-lg px-4 py-2.5 pl-10 text-xs sm:text-sm focus:outline-none focus:border-[#10b981] focus:ring-1 focus:ring-[#10b981] transition-all border ${
                   isDark 
                     ? 'bg-[#161616]/90 border-[#5a5a5a] text-white placeholder-[#808080]' 
                     : 'bg-white border-slate-300 text-slate-900 placeholder-slate-400 shadow-sm'
@@ -165,11 +165,11 @@ export default function HeroBanner({
               {/* Card Header: Session Status */}
               <div className="flex items-center justify-between pb-4 mb-4 border-b border-[#2d2d2d]/30">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#e50914]/20 border border-[#e50914]/40 flex items-center justify-center text-[#e50914]">
+                  <div className="w-10 h-10 rounded-full bg-[#10b981]/20 border border-[#10b981]/40 flex items-center justify-center text-[#10b981]">
                     <ShieldCheck className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#e50914] block">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#10b981] block">
                       Portal Session
                     </span>
                     <h3 className={`text-sm font-bold truncate max-w-[170px] ${isDark ? 'text-white' : 'text-slate-900'}`}>
@@ -184,7 +184,7 @@ export default function HeroBanner({
                       logout();
                       if (onNavigateToLogin) onNavigateToLogin();
                     }}
-                    className="px-2.5 py-1 rounded bg-[#e50914] text-white text-xs font-bold hover:bg-[#b80710] flex items-center gap-1 shadow-sm"
+                    className="px-2.5 py-1 rounded bg-[#10b981] text-white text-xs font-bold hover:bg-[#059669] flex items-center gap-1 shadow-sm"
                     title="Sign Out / Logout"
                   >
                     <LogOut className="w-3.5 h-3.5 text-white" />
@@ -204,11 +204,11 @@ export default function HeroBanner({
               {/* Status details */}
               <div className="space-y-3 mb-5 text-xs">
                 <div className={`p-3 rounded-xl border flex items-center justify-between ${
-                  isDark ? 'bg-black/40 border-[#2d2d2d]' : 'bg-slate-50 border-slate-200'
+                  isDark ? 'bg-[#181818] border-[#2b2b2b]' : 'bg-slate-50 border-slate-200'
                 }`}>
                   <div>
                     <span className="text-[10px] block text-[#808080] font-semibold uppercase">International Peak</span>
-                    <strong className="text-sm font-black text-[#e50914]">₹47.24 LPA</strong>
+                    <strong className="text-sm font-black text-[#10b981]">₹47.24 LPA</strong>
                   </div>
                   <span className="text-[10px] font-bold text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">
                     Belc Japan Active
@@ -216,7 +216,7 @@ export default function HeroBanner({
                 </div>
 
                 <div className={`p-3 rounded-xl border flex items-center justify-between ${
-                  isDark ? 'bg-black/40 border-[#2d2d2d]' : 'bg-slate-50 border-slate-200'
+                  isDark ? 'bg-[#181818] border-[#2b2b2b]' : 'bg-slate-50 border-slate-200'
                 }`}>
                   <div>
                     <span className="text-[10px] block text-[#808080] font-semibold uppercase">Exam Corner Bank</span>
@@ -226,7 +226,7 @@ export default function HeroBanner({
                   </div>
                   <button
                     onClick={onStartDemoTest}
-                    className="text-[10px] font-bold text-[#e50914] hover:underline"
+                    className="text-[10px] font-bold text-[#10b981] hover:underline"
                   >
                     Launch Demo →
                   </button>
@@ -243,7 +243,7 @@ export default function HeroBanner({
                       : 'bg-white border-slate-300 text-slate-800 hover:bg-slate-50'
                   }`}
                 >
-                  <LogIn className="w-3.5 h-3.5 text-[#e50914]" />
+                  <LogIn className="w-3.5 h-3.5 text-[#10b981]" />
                   <span>{user ? 'My Profile' : 'Sign In'}</span>
                 </button>
 
@@ -268,7 +268,7 @@ export default function HeroBanner({
           <div className={isDark ? 'card-feature-gradient p-4 rounded-xl' : 'bg-white border border-slate-200 p-4 rounded-xl shadow-sm'}>
             <div className={`flex items-center justify-between mb-1 ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
               <span className="text-xs uppercase tracking-wider font-semibold">Peak Package</span>
-              <TrendingUp className="w-4 h-4 text-[#e50914]" />
+              <TrendingUp className="w-4 h-4 text-[#10b981]" />
             </div>
             <div className={`text-2xl sm:text-3xl font-black ${isDark ? 'text-white' : 'text-slate-900'}`}>
               ₹47.24 <span className={`text-sm font-normal ${isDark ? 'text-[#b3b3b3]' : 'text-slate-500'}`}>LPA</span>
@@ -279,7 +279,7 @@ export default function HeroBanner({
           <div className={isDark ? 'card-feature-gradient p-4 rounded-xl' : 'bg-white border border-slate-200 p-4 rounded-xl shadow-sm'}>
             <div className={`flex items-center justify-between mb-1 ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
               <span className="text-xs uppercase tracking-wider font-semibold">Recruiting Giants</span>
-              <Award className="w-4 h-4 text-[#e50914]" />
+              <Award className="w-4 h-4 text-[#10b981]" />
             </div>
             <div className={`text-2xl sm:text-3xl font-black ${isDark ? 'text-white' : 'text-slate-900'}`}>
               250+ <span className={`text-sm font-normal ${isDark ? 'text-[#b3b3b3]' : 'text-slate-500'}`}>Firms</span>
@@ -290,7 +290,7 @@ export default function HeroBanner({
           <div className={isDark ? 'card-feature-gradient p-4 rounded-xl' : 'bg-white border border-slate-200 p-4 rounded-xl shadow-sm'}>
             <div className={`flex items-center justify-between mb-1 ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
               <span className="text-xs uppercase tracking-wider font-semibold">Average Package</span>
-              <Sparkles className="w-4 h-4 text-[#e50914]" />
+              <Sparkles className="w-4 h-4 text-[#10b981]" />
             </div>
             <div className={`text-2xl sm:text-3xl font-black ${isDark ? 'text-white' : 'text-slate-900'}`}>
               ₹6.3 <span className={`text-sm font-normal ${isDark ? 'text-[#b3b3b3]' : 'text-slate-500'}`}>LPA</span>

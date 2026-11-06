@@ -139,7 +139,7 @@ export default function AdminCallModal({ isOpen, onClose }) {
 
           {callState === 'idle' && (
             <div className="w-full">
-              <div className="w-16 h-16 rounded-full bg-[#192247] border border-[#5a5a5a] flex items-center justify-center mx-auto mb-4 text-[#e50914] shadow-xl">
+              <div className="w-16 h-16 rounded-full bg-[#222222] border border-[#3d3d3d] flex items-center justify-center mx-auto mb-4 text-[#e50914] shadow-xl">
                 <Building2 className="w-8 h-8" />
               </div>
               <h4 className="text-lg font-black text-white mb-1">

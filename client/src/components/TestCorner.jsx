@@ -136,7 +136,7 @@ export default function TestCorner({ exams = [], loading = false, onSelectExam, 
                 }`}
               >
                 {/* Glow bar */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#e50914] via-rose-600 to-[#192247]" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#10b981] via-emerald-600 to-teal-700" />
 
                 <div>
                   {/* Top Badges */}

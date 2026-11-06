@@ -6,7 +6,8 @@
   :root {
     --color-netflix-red: #e50914;
     --color-netflix-red-hover: #b80710;
-    --font-netflix-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', 'Outfit', 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-netflix-sans: var(--font-sans);
   }
 
   /* Default Dark Mode */
@@ -45,7 +46,7 @@
     padding: 0;
     background-color: var(--bg-main);
     color: var(--text-primary);
-    font-family: var(--font-netflix-sans);
+    font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden !important;
@@ -58,27 +59,30 @@
 
 /* Feature Card Styling for Dark and Light Modes */
 .card-feature-gradient {
-  background: linear-gradient(149deg, #192247, #210e17);
-  border: 1px solid rgba(90, 90, 90, 0.4);
+  background: linear-gradient(149deg, #1e1e1e, #131313) !important;
+  border: 1px solid #2e2e2e !important;
   border-radius: 16px;
   transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1), border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 html.light .card-feature-gradient {
-  background: #ffffff !important;
+  background: #f8fafc !important;
   border: 1px solid #e2e8f0 !important;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04) !important;
 }
 
 .card-feature-gradient:hover {
   transform: translateY(-3px) scale(1.005);
-  border-color: rgba(229, 9, 20, 0.6);
-  box-shadow: 0 0 20px rgba(229, 9, 20, 0.2);
+  border-color: rgba(16, 185, 129, 0.6) !important;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.18) !important;
 }
 
-/* Red Primary Buttons (Netflix Red) */
-.btn-netflix-primary {
-  background-color: #e50914 !important;
+/* Green Primary Buttons */
+.btn-netflix-primary,
+button.bg-\[\#e50914\],
+a.bg-\[\#e50914\],
+.btn-green-primary {
+  background-color: #10b981 !important;
   color: #ffffff !important;
   font-weight: 700;
   border-radius: 6px;
@@ -89,9 +93,12 @@ html.light .card-feature-gradient {
   border: none;
 }
 
-.btn-netflix-primary:hover {
-  background-color: #b80710 !important;
-  box-shadow: 0 0 20px rgba(229, 9, 20, 0.4);
+.btn-netflix-primary:hover,
+button.bg-\[\#e50914\]:hover,
+a.bg-\[\#e50914\]:hover,
+.btn-green-primary:hover {
+  background-color: #059669 !important;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.4) !important;
   transform: translateY(-1px);
 }
 
@@ -190,7 +197,7 @@ html.light ::-webkit-scrollbar-thumb {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #e50914;
+  background: #10b981;
 }
 
 /* Hide Scrollbar */

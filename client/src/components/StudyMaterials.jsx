@@ -69,7 +69,7 @@ export default function StudyMaterials({ materials }) {
             <div>
               <div className="flex items-center justify-between mb-3">
                 <span className={`text-[10px] font-bold uppercase px-2 py-0.5 rounded ${mat.category === 'Japanese' ? 'bg-rose-500/10 text-rose-500 border border-rose-500/30' :
-                    mat.category === 'Technical' ? 'bg-blue-500/10 text-blue-500 border border-blue-500/30' :
+                    mat.category === 'Technical' ? 'bg-emerald-500/10 text-emerald-500 border border-emerald-500/30' :
                       isDark ? 'bg-[#2d2d2d] text-[#b3b3b3]' : 'bg-slate-100 text-slate-600'
                   }`}>
                   {mat.category}

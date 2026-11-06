@@ -115,7 +115,7 @@ function MainApp() {
   const japaneseExams = exams.filter(e => e.category === 'Japanese');
 
   return (
-    <div className={`min-h-screen flex flex-col w-full max-w-full overflow-x-hidden selection:bg-[#e50914] selection:text-white transition-colors duration-200 ${
+    <div className={`min-h-screen flex flex-col w-full max-w-full overflow-x-hidden selection:bg-[#10b981] selection:text-white transition-colors duration-200 ${
       isDark ? 'bg-black text-white' : 'bg-slate-50 text-slate-900'
     }`}>
       
@@ -168,7 +168,7 @@ function MainApp() {
 
                   <div>
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-[#e50914]/20 text-[#e50914] border border-[#e50914]/40">
+                      <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40">
                         Demo Test #{index + 1}
                       </span>
                       <span className={`text-xs font-mono ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
@@ -177,7 +177,7 @@ function MainApp() {
                     </div>
 
                     <h3 className={`text-base font-bold transition-colors mb-2 line-clamp-2 ${
-                      isDark ? 'text-white group-hover:text-[#e50914]' : 'text-slate-900 group-hover:text-[#e50914]'
+                      isDark ? 'text-white group-hover:text-[#10b981]' : 'text-slate-900 group-hover:text-[#10b981]'
                     }`}>
                       {demo.title}
                     </h3>
@@ -220,13 +220,13 @@ function MainApp() {
                 >
                   <div>
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-[#e50914]/20 text-[#e50914] border border-[#e50914]/40">
+                      <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40">
                         {exam.subcategory}
                       </span>
                       <span className={`text-xs ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>{exam.duration_minutes}m</span>
                     </div>
                     <h3 className={`text-base font-bold transition-colors mb-2 line-clamp-2 ${
-                      isDark ? 'text-white group-hover:text-[#e50914]' : 'text-slate-900 group-hover:text-[#e50914]'
+                      isDark ? 'text-white group-hover:text-[#10b981]' : 'text-slate-900 group-hover:text-[#10b981]'
                     }`}>
                       {exam.title}
                     </h3>
@@ -313,7 +313,7 @@ function MainApp() {
       <div className="fixed bottom-5 right-5 z-40">
         <button
           onClick={() => setChatbotOpen(true)}
-          className="w-12 h-12 rounded-full bg-[#e50914] hover:bg-[#b80710] text-white flex items-center justify-center shadow-2xl hover:scale-105 transition-all shadow-[#e50914]/40 border-2 border-white/20"
+          className="w-12 h-12 rounded-full bg-[#10b981] hover:bg-[#b80710] text-white flex items-center justify-center shadow-2xl hover:scale-105 transition-all shadow-[#e50914]/40 border-2 border-white/20"
           title="Open Placement AI Copilot"
           aria-label="Open AI Copilot"
         >
@@ -329,14 +329,14 @@ function MainApp() {
           <div className="flex flex-col md:flex-row items-start justify-between gap-8 mb-8">
             <div className="max-w-sm">
               <div className="flex items-center gap-2.5 mb-2">
-                <div className="w-8 h-8 rounded bg-white p-0.5 border border-[#e50914]/40 overflow-hidden shrink-0">
+                <div className="w-8 h-8 rounded bg-white p-0.5 border border-[#10b981]/40 overflow-hidden shrink-0">
                   <img
                     src="/sahyadri-logo.jpg"
                     alt="Sahyadri Crest"
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <span className="font-bold tracking-wider text-base text-[#e50914]">SAHYADRI COLLEGE OF ENGINEERING & MANAGEMENT</span>
+                <span className="font-bold tracking-wider text-base text-[#10b981]">SAHYADRI COLLEGE OF ENGINEERING & MANAGEMENT</span>
               </div>
               <p className="text-[11px] text-[#808080] leading-relaxed mb-3">
                 Autonomous institution affiliated to VTU, Belagavi and approved by AICTE, New Delhi. Accredited by NAAC with 'A' Grade & NBA.
@@ -348,7 +348,7 @@ function MainApp() {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-xs">
               <div>
-                <h4 className="font-bold text-[#e50914] mb-2 uppercase text-[10px] tracking-wider">Placement Cell</h4>
+                <h4 className="font-bold text-[#10b981] mb-2 uppercase text-[10px] tracking-wider">Placement Cell</h4>
                 <ul className="space-y-1.5 text-[#808080]">
                   <li>Prof. Rashmi Bhandary (Dean)</li>
                   <li>Zenken Japanese Connect</li>
@@ -358,7 +358,7 @@ function MainApp() {
               </div>
 
               <div>
-                <h4 className="font-bold text-[#e50914] mb-2 uppercase text-[10px] tracking-wider">Top Recruiters</h4>
+                <h4 className="font-bold text-[#10b981] mb-2 uppercase text-[10px] tracking-wider">Top Recruiters</h4>
                 <ul className="space-y-1.5 text-[#808080]">
                   <li>Belc Co. (₹47.24 LPA)</li>
                   <li>Microsoft (₹40.0 LPA)</li>
@@ -368,11 +368,11 @@ function MainApp() {
               </div>
 
               <div>
-                <h4 className="font-bold text-[#e50914] mb-2 uppercase text-[10px] tracking-wider">Helpline & Support</h4>
+                <h4 className="font-bold text-[#10b981] mb-2 uppercase text-[10px] tracking-wider">Helpline & Support</h4>
                 <ul className="space-y-1.5 text-[#808080]">
                   <li>Phone: +91-824-2277222</li>
                   <li>Email: placements@sahyadri.edu.in</li>
-                  <li>Web: <a href="https://sahyadri.edu.in" target="_blank" rel="noreferrer" class="text-white hover:text-[#e50914] underline font-semibold inline-flex items-center gap-1">sahyadri.edu.in <ExternalLink className="w-3 h-3" /></a></li>
+                  <li>Web: <a href="https://sahyadri.edu.in" target="_blank" rel="noreferrer" class="text-white hover:text-[#10b981] underline font-semibold inline-flex items-center gap-1">sahyadri.edu.in <ExternalLink className="w-3 h-3" /></a></li>
                 </ul>
               </div>
             </div>

@@ -216,11 +216,11 @@ export default function ExamSessionModal({ examId, onClose, onExamCompleted }) {
                         key={optKey}
                         onClick={() => handleSelectOption(currentQ.id, optKey)}
                         className={`p-4 rounded-xl border text-sm font-medium cursor-pointer transition-all flex items-center gap-3.5 ${isSelected
-                            ? 'bg-[#192247] border-[#e50914] text-white shadow-lg shadow-[#e50914]/20'
+                            ? 'bg-[#222222] border-[#10b981] text-white shadow-lg shadow-[#10b981]/20'
                             : 'bg-[#181818] border-[#2d2d2d] text-[#b3b3b3] hover:border-[#5a5a5a] hover:text-white'
                           }`}
                       >
-                        <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${isSelected ? 'bg-[#e50914] text-white' : 'bg-[#2d2d2d] text-[#808080]'
+                        <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${isSelected ? 'bg-[#10b981] text-white' : 'bg-[#2d2d2d] text-[#808080]'
                           }`}>
                           {optKey}
                         </div>
