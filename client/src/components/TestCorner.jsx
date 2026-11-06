@@ -64,19 +64,40 @@ export default function TestCorner({ exams = [], loading = false, onSelectExam, 
           <div className={`flex p-1 rounded-lg border ${
             isDark ? 'border-[#2d2d2d] bg-[#161616]' : 'border-slate-200 bg-slate-100'
           }`}>
-            {difficulties.map(d => (
-              <button
-                key={d}
-                onClick={() => setSelectedDifficulty(d)}
-                className={`px-3 py-1 rounded text-xs font-semibold transition-all ${
-                  selectedDifficulty === d
-                    ? 'bg-[#10b981] text-white shadow-sm font-bold'
-                    : isDark ? 'text-[#808080] hover:text-white' : 'text-slate-600 hover:text-slate-900'
-                }`}
-              >
-                {d}
-              </button>
-            ))}
+            {difficulties.map(d => {
+              const isSelected = selectedDifficulty === d;
+              let btnStyle = '';
+              if (isSelected) {
+                if (d === 'Medium') {
+                  btnStyle = 'bg-amber-400 text-slate-950 font-black shadow-md shadow-amber-400/25';
+                } else if (d === 'Hard') {
+                  btnStyle = 'bg-red-600 text-white font-black shadow-md shadow-red-600/25';
+                } else if (d === 'Easy') {
+                  btnStyle = 'bg-[#10b981] text-white font-black shadow-md shadow-emerald-500/25';
+                } else {
+                  btnStyle = 'bg-[#10b981] text-white font-black shadow-md';
+                }
+              } else {
+                if (d === 'Medium') {
+                  btnStyle = isDark ? 'text-amber-400/90 hover:text-amber-300 hover:bg-amber-400/10' : 'text-amber-700 hover:bg-amber-50';
+                } else if (d === 'Hard') {
+                  btnStyle = isDark ? 'text-red-400/90 hover:text-red-300 hover:bg-red-500/10' : 'text-red-600 hover:bg-red-50';
+                } else if (d === 'Easy') {
+                  btnStyle = isDark ? 'text-emerald-400/90 hover:text-emerald-300 hover:bg-emerald-500/10' : 'text-emerald-700 hover:bg-emerald-50';
+                } else {
+                  btnStyle = isDark ? 'text-[#808080] hover:text-white' : 'text-slate-600 hover:text-slate-900';
+                }
+              }
+              return (
+                <button
+                  key={d}
+                  onClick={() => setSelectedDifficulty(d)}
+                  className={`px-3 py-1 rounded text-xs font-semibold transition-all ${btnStyle}`}
+                >
+                  {d}
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -160,10 +181,10 @@ export default function TestCorner({ exams = [], loading = false, onSelectExam, 
 
                     <span className={`text-[10px] font-bold px-2 py-0.5 rounded ${
                       exam.difficulty === 'Easy' 
-                        ? 'text-emerald-500 bg-emerald-500/10 border border-emerald-500/20' 
+                        ? 'text-emerald-400 bg-emerald-500/15 border border-emerald-500/30' 
                         : exam.difficulty === 'Medium' 
-                          ? 'text-rose-500 bg-rose-500/10 border border-rose-500/20' 
-                          : 'text-[#10b981] bg-[#10b981]/10 border border-[#10b981]/20 font-bold'
+                          ? 'text-amber-400 bg-amber-500/15 border border-amber-500/30 font-bold' 
+                          : 'text-red-400 bg-red-500/15 border border-red-500/30 font-bold'
                     }`}>
                       {exam.difficulty}
                     </span>
