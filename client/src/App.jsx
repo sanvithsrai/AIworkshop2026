@@ -22,7 +22,7 @@ import VoiceAgentModal from './components/VoiceAgentModal';
 import AdminCallModal from './components/AdminCallModal';
 import AuthModal from './components/AuthModal';
 
-import { Play, Sparkles, PhoneCall, Bot, Globe, Award, ChevronRight, CheckCircle2 } from 'lucide-react';
+import { Play, Sparkles, PhoneCall, Bot, Globe, Award, ChevronRight, CheckCircle2, ExternalLink } from 'lucide-react';
 
 function MainApp() {
   const { user, isFaculty } = useAuth();
@@ -372,7 +372,7 @@ function MainApp() {
                 <ul className="space-y-1.5 text-[#808080]">
                   <li>Phone: +91-824-2277222</li>
                   <li>Email: placements@sahyadri.edu.in</li>
-                  <li>Web: sahyadri.edu.in</li>
+                  <li>Web: <a href="https://sahyadri.edu.in" target="_blank" rel="noreferrer" class="text-white hover:text-[#e50914] underline font-semibold inline-flex items-center gap-1">sahyadri.edu.in <ExternalLink className="w-3 h-3" /></a></li>
                 </ul>
               </div>
             </div>

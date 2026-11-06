@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { useAuth } from '../context/AuthContext';
-import { Play, Sparkles, Globe, Award, TrendingUp, Compass, ArrowRight, ShieldCheck, LogIn, LogOut, PhoneCall } from 'lucide-react';
+import { Play, Sparkles, Globe, Award, TrendingUp, Compass, ArrowRight, ShieldCheck, LogIn, LogOut, PhoneCall, ExternalLink } from 'lucide-react';
 
 export default function HeroBanner({ 
   onStartDemoTest, 
@@ -41,16 +41,24 @@ export default function HeroBanner({
           {/* Left Column: Headlines, CTA, Search (7 cols) */}
           <div className="lg:col-span-7">
             {/* Top Pill / Badge */}
-            <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs mb-5 backdrop-blur-sm shadow-sm border ${
-              isDark 
-                ? 'bg-[#192247]/80 border-[#5a5a5a]/50 text-white' 
-                : 'bg-white border-red-200 text-slate-800'
-            }`}>
+            <a
+              href="https://sahyadri.edu.in"
+              target="_blank"
+              rel="noreferrer"
+              className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs mb-5 backdrop-blur-sm shadow-sm border transition-all hover:border-[#e50914] group ${
+                isDark 
+                  ? 'bg-[#192247]/80 border-[#5a5a5a]/50 text-white hover:bg-[#192247]' 
+                  : 'bg-white border-red-200 text-slate-800 hover:bg-slate-50'
+              }`}
+              title="Visit Sahyadri College Official Portal (sahyadri.edu.in)"
+            >
               <span className="w-2 h-2 rounded-full bg-[#e50914] animate-pulse" />
-              <span className={`font-semibold ${isDark ? 'text-white' : 'text-slate-900'}`}>SPACE • Sahyadri Placement Season 2026 Live</span>
+              <span className={`font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>Sahyadri College (SCEM) Placement Arena</span>
               <span className={isDark ? 'text-[#808080]' : 'text-slate-400'}>•</span>
-              <span className="text-[#e50914] font-bold">250+ Visiting Corporates</span>
-            </div>
+              <span className="text-[#e50914] font-extrabold flex items-center gap-1">
+                sahyadri.edu.in <ExternalLink className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+              </span>
+            </a>
 
             {/* Headline */}
             <h1 className={`text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-[1.1] mb-5 ${
@@ -99,6 +107,23 @@ export default function HeroBanner({
                 <Globe className="w-4 h-4 text-[#e50914]" />
                 <span>Japan Connect (₹47.24 LPA)</span>
               </button>
+
+              {/* Official College Portal Button */}
+              <a
+                href="https://sahyadri.edu.in"
+                target="_blank"
+                rel="noreferrer"
+                className={`px-4 py-3 rounded font-medium text-sm sm:text-base transition-all flex items-center gap-2 border group ${
+                  isDark 
+                    ? 'bg-black/60 border-[#5a5a5a] text-white hover:border-[#e50914] hover:bg-[#2d2d2d]/60' 
+                    : 'bg-white border-slate-300 text-slate-800 hover:border-[#e50914] hover:bg-slate-50 shadow-sm'
+                }`}
+                title="Visit Sahyadri College of Engineering & Management Official Website"
+              >
+                <img src="/sahyadri-logo.jpg" alt="SCEM" className="w-4 h-4 rounded-sm object-contain" />
+                <span>Visit Official Site</span>
+                <ExternalLink className="w-3.5 h-3.5 text-[#e50914] group-hover:translate-x-0.5 transition-transform" />
+              </a>
             </div>
 
             {/* Quick Search Input */}

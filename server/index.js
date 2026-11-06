@@ -14,6 +14,7 @@ const recruitersRoutes = require('./routes/recruiters');
 const hackathonsRoutes = require('./routes/hackathons');
 const adminRoutes = require('./routes/admin');
 const aiRoutes = require('./routes/ai');
+const newsRoutes = require('./routes/news');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -49,6 +50,7 @@ app.use('/api/recruiters', recruitersRoutes);
 app.use('/api/hackathons', hackathonsRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/ai', aiRoutes);
+app.use('/api/news', newsRoutes);
 
 // Health Check
 app.get('/api/health', (req, res) => {

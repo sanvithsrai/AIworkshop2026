@@ -16,7 +16,9 @@ import {
   X, 
   Sun, 
   Moon, 
-  LogIn
+  LogIn,
+  Globe,
+  ExternalLink
 } from 'lucide-react';
 
 export default function Navbar({ 
@@ -34,7 +36,7 @@ export default function Navbar({
   const navItems = [
     { id: 'tests', label: 'Test Corner', shortLabel: 'Tests', icon: Award },
     { id: 'recruiters', label: 'Recruiters', shortLabel: 'Recruiters', icon: Briefcase },
-    { id: 'newsletters', label: 'Campus Buzz', shortLabel: 'Buzz', icon: BookOpen },
+    { id: 'newsletters', label: 'Tech & Campus News', shortLabel: 'News', icon: Globe },
     { id: 'jobs', label: 'Verified Jobs', shortLabel: 'Jobs', icon: Briefcase },
     { id: 'materials', label: 'Resources', shortLabel: 'Resources', icon: GraduationCap },
     { id: 'hackathons', label: 'Hackathons', shortLabel: 'Events', icon: Terminal },
@@ -51,7 +53,7 @@ export default function Navbar({
       <div className="w-full px-3 sm:px-6 lg:px-8 relative">
         <div className="flex items-center justify-between h-16 sm:h-18">
           
-          {/* 1. LEFT: Sahyadri SPACE Brand Logo (Pinned to Left) */}
+          {/* 1. LEFT: Sahyadri SPACE Brand Logo */}
           <div 
             onClick={() => setActiveTab('tests')}
             className="flex items-center gap-2 sm:gap-2.5 cursor-pointer group select-none shrink-0 z-20"
@@ -71,11 +73,26 @@ export default function Navbar({
               )}
             </div>
 
-            <div className="flex items-center gap-1.5">
-              <span className="font-black text-base sm:text-xl tracking-wider text-[#e50914]">SAHYADRI</span>
-              <span className="text-[10px] sm:text-[11px] uppercase tracking-wider font-extrabold px-1.5 py-0.5 rounded bg-[#e50914]/15 text-[#e50914] border border-[#e50914]/30">
-                SPACE
-              </span>
+            <div className="flex flex-col select-none">
+              <div className="flex items-center gap-1.5 leading-tight">
+                <span className="font-black text-base sm:text-lg tracking-wider text-[#e50914]">SAHYADRI</span>
+                <span className="text-[9px] uppercase tracking-wider font-extrabold px-1.5 py-0.2 rounded bg-[#e50914]/15 text-[#e50914] border border-[#e50914]/30 leading-none">
+                  SPACE
+                </span>
+              </div>
+              <a
+                href="https://sahyadri.edu.in"
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className={`inline-flex items-center gap-1 text-[10px] font-semibold transition-colors mt-0.5 leading-none ${
+                  isDark ? 'text-slate-400 hover:text-white' : 'text-slate-500 hover:text-[#e50914]'
+                }`}
+                title="Official College Website: sahyadri.edu.in"
+              >
+                <span>sahyadri.edu.in</span>
+                <ExternalLink className="w-2 h-2 text-[#e50914]" />
+              </a>
             </div>
           </div>
 
@@ -299,7 +316,24 @@ export default function Navbar({
             </button>
 
             {/* Assistant Tools in Mobile Menu */}
-            <div className="grid grid-cols-2 gap-2 mt-2 pt-2 border-t border-[#262626]/40">
+            
+            {/* Official College Link in Mobile Drawer */}
+            <a
+              href="https://sahyadri.edu.in"
+              target="_blank"
+              rel="noreferrer"
+              className={`w-full text-left px-3 py-2.5 rounded-lg text-xs font-bold flex items-center justify-between transition-colors border ${
+                isDark ? 'border-[#262626] text-[#b3b3b3] hover:text-white bg-[#141414]' : 'border-slate-200 text-slate-700 hover:text-black bg-slate-50'
+              }`}
+            >
+              <div className="flex items-center gap-2.5">
+                <Globe className="w-4 h-4 text-[#e50914]" />
+                <span>Official College Site (sahyadri.edu.in)</span>
+              </div>
+              <ExternalLink className="w-3.5 h-3.5 text-[#e50914]" />
+            </a>
+
+<div className="grid grid-cols-2 gap-2 mt-2 pt-2 border-t border-[#262626]/40">
               <button
                 onClick={() => { onOpenAdminCall(); setMobileMenuOpen(false); }}
                 className="btn-netflix-primary py-2 text-xs font-bold rounded flex items-center justify-center gap-1.5"

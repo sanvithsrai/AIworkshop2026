@@ -76,6 +76,12 @@ export const api = {
   // Hackathons & Live News
   getHackathons: () => request('/hackathons'),
 
+  // International Tech & Company News
+  getInternationalNews: (params = {}) => {
+    const query = new URLSearchParams(params).toString();
+    return request('/news/international' + (query ? '?' + query : ''));
+  },
+
   // Admin
   getAdminDashboard: () => request('/admin/dashboard'),
 
