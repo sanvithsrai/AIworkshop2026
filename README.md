@@ -2,7 +2,7 @@
 
 > **Designed for Sahyadri College of Engineering & Management (SCEM), Mangaluru**  
 > *Autonomous Institution affiliated to VTU, Belagavi | Approved by AICTE | Accredited NAAC 'A' & NBA*  
-> *Theme: Netflix Spain — Style Reference (Cinematic Pure Black `#000000`, Netflix Red `#e50914`, Cosmic Feature Card Gradient `linear-gradient(149deg, #192247, #210e17)`, Infinite Digital Shelves)*
+> *Theme: Black and green with mode toggle from dark to light
 
 ---
 
