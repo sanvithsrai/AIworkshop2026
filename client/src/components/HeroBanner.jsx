@@ -28,8 +28,8 @@ export default function HeroBanner({
         ) : (
           <>
             {/* Light Mode Crisp & Fresh Gradients (No dark elements) */}
-            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] max-w-full h-[300px] bg-gradient-to-tr from-red-100/50 via-rose-50/40 to-transparent blur-[100px] rounded-full pointer-events-none" />
-            <div className="absolute -top-10 right-10 w-[350px] max-w-full h-[250px] bg-orange-100/30 blur-[120px] pointer-events-none" />
+            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] max-w-full h-[300px] bg-gradient-to-tr from-slate-100/50 via-rose-50/40 to-transparent blur-[100px] rounded-full pointer-events-none" />
+            <div className="absolute -top-10 right-10 w-[350px] max-w-full h-[250px] bg-emerald-100/20 blur-[120px] pointer-events-none" />
             <div className="absolute inset-0 bg-gradient-to-b from-slate-50/40 via-slate-50/80 to-slate-50" />
           </>
         )}
@@ -84,7 +84,7 @@ export default function HeroBanner({
               and real-time recruiter pipelines.
             </p>
 
-            {/* Action Buttons (Strictly Red, no orange) */}
+            {/* Action Buttons (Strictly Green) */}
             <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-8">
               {/* Primary Hero CTA Button (Netflix Red) */}
               <button

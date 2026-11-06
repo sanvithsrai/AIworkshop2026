@@ -52,7 +52,7 @@ export default function StudentDashboard({ onLaunchExam }) {
           ? 'card-feature-gradient border-[#5a5a5a]/40'
           : 'bg-white border-slate-200 shadow-sm'
         }`}>
-        <div className="absolute top-0 right-0 w-80 h-80 bg-[#e50914]/10 blur-[100px] pointer-events-none rounded-full" />
+        <div className="absolute top-0 right-0 w-80 h-80 bg-[#10b981]/10 blur-[100px] pointer-events-none rounded-full" />
 
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
           {/* User Details */}
@@ -60,7 +60,7 @@ export default function StudentDashboard({ onLaunchExam }) {
             <img
               src={user?.avatar || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150'}
               alt={user?.name}
-              className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-2 border-[#e50914] shadow-xl"
+              className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-2 border-[#10b981] shadow-xl"
             />
             <div>
               <div className="flex items-center gap-2 mb-1">
@@ -73,9 +73,9 @@ export default function StudentDashboard({ onLaunchExam }) {
                 {user?.branch} • Sem {user?.semester || 6}
               </p>
               <div className={`flex items-center gap-3 text-xs mt-1 font-mono ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
-                <span>USN: <strong className="text-[#e50914]">{user?.usn || '4SF22CI048'}</strong></span>
+                <span>USN: <strong className="text-[#10b981]">{user?.usn || '4SF22CI048'}</strong></span>
                 <span>•</span>
-                <span>CGPA: <strong className="text-[#e50914] font-bold">{user?.cgpa || '8.85'}</strong></span>
+                <span>CGPA: <strong className="text-[#10b981] font-bold">{user?.cgpa || '8.85'}</strong></span>
               </div>
             </div>
           </div>
@@ -97,7 +97,7 @@ export default function StudentDashboard({ onLaunchExam }) {
                   cx="32"
                   cy="32"
                   r="28"
-                  stroke="#e50914"
+                  stroke="#10b981"
                   strokeWidth="5"
                   strokeDasharray="175"
                   strokeDashoffset={175 - (175 * readinessIndex) / 100}
@@ -130,7 +130,7 @@ export default function StudentDashboard({ onLaunchExam }) {
           <div className={`p-3 rounded-lg border ${isDark ? 'bg-black/40 border-[#2d2d2d]' : 'bg-slate-50 border-slate-200'
             }`}>
             <span className={`text-[10px] block uppercase font-semibold ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Average Accuracy</span>
-            <span className="text-xl font-black text-[#e50914]">{avgScore}%</span>
+            <span className="text-xl font-black text-[#10b981]">{avgScore}%</span>
             <span className={`text-[10px] block ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Across All Modules</span>
           </div>
           <div className={`p-3 rounded-lg border ${isDark ? 'bg-black/40 border-[#2d2d2d]' : 'bg-slate-50 border-slate-200'
@@ -142,7 +142,7 @@ export default function StudentDashboard({ onLaunchExam }) {
           <div className={`p-3 rounded-lg border ${isDark ? 'bg-black/40 border-[#2d2d2d]' : 'bg-slate-50 border-slate-200'
             }`}>
             <span className={`text-[10px] block uppercase font-semibold ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Japan Target</span>
-            <span className="text-xl font-black text-[#e50914]">JLPT N5</span>
+            <span className="text-xl font-black text-[#10b981]">JLPT N5</span>
             <span className={`text-[10px] block ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Belc & IMV Priority</span>
           </div>
         </div>
@@ -153,7 +153,7 @@ export default function StudentDashboard({ onLaunchExam }) {
         }`}>
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2">
-            <Award className="w-5 h-5 text-[#e50914]" />
+            <Award className="w-5 h-5 text-[#10b981]" />
             <h3 className={`text-lg font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>Your Examination Record</h3>
           </div>
           <span className={`text-xs ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
@@ -202,7 +202,7 @@ export default function StudentDashboard({ onLaunchExam }) {
                     <td className={`py-3 px-4 font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>
                       {item.score} / {item.total_marks}
                     </td>
-                    <td className="py-3 px-4 font-bold text-[#e50914]">
+                    <td className="py-3 px-4 font-bold text-[#10b981]">
                       {item.percentage}%
                     </td>
                     <td className="py-3 px-4">

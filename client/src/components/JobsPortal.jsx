@@ -69,7 +69,7 @@ export default function JobsPortal({ jobs, onRefresh }) {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
         <div>
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-[#e50914]/20 border border-[#e50914]/40 text-[#e50914] text-xs font-bold uppercase mb-2">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-[#10b981]/20 border border-[#10b981]/40 text-[#10b981] text-xs font-bold uppercase mb-2">
             <ShieldCheck className="w-3.5 h-3.5" />
             <span>Placement Cell Verified Openings</span>
           </div>
@@ -102,7 +102,7 @@ export default function JobsPortal({ jobs, onRefresh }) {
             value={search}
             onChange={e => setSearch(e.target.value)}
             placeholder="Search company or role (e.g. Microsoft, Belc, Tokyo, SDE)..."
-            className={`w-full rounded-lg px-4 py-2.5 pl-10 text-xs focus:border-[#e50914] outline-none border ${
+            className={`w-full rounded-lg px-4 py-2.5 pl-10 text-xs focus:border-[#10b981] outline-none border ${
               isDark 
                 ? 'bg-[#181818] border-[#2d2d2d] text-white placeholder-[#808080]' 
                 : 'bg-white border-slate-300 text-slate-900 placeholder-slate-400 shadow-sm'
@@ -119,8 +119,8 @@ export default function JobsPortal({ jobs, onRefresh }) {
             key={job.id}
             className={`p-6 rounded-2xl flex flex-col justify-between group transition-all ${
               isDark 
-                ? 'card-feature-gradient border border-[#5a5a5a]/30 hover:border-[#e50914]' 
-                : 'bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-[#e50914]'
+                ? 'card-feature-gradient border border-[#5a5a5a]/30 hover:border-[#10b981]' 
+                : 'bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-[#10b981]'
             }`}
           >
             <div>
@@ -129,7 +129,7 @@ export default function JobsPortal({ jobs, onRefresh }) {
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     <span className={`text-lg font-black transition-colors ${
-                      isDark ? 'text-white group-hover:text-[#e50914]' : 'text-slate-900 group-hover:text-[#e50914]'
+                      isDark ? 'text-white group-hover:text-[#10b981]' : 'text-slate-900 group-hover:text-[#10b981]'
                     }`}>
                       {job.company}
                     </span>
@@ -143,7 +143,7 @@ export default function JobsPortal({ jobs, onRefresh }) {
                 </div>
 
                 <div className="text-right">
-                  <span className="text-sm font-black text-[#e50914] block">
+                  <span className="text-sm font-black text-[#10b981] block">
                     {job.ctc}
                   </span>
                   <span className={`text-[10px] ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
@@ -155,7 +155,7 @@ export default function JobsPortal({ jobs, onRefresh }) {
               {/* Badges / Specs */}
               <div className={`flex flex-wrap items-center gap-3 text-xs mb-4 ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
                 <span className="flex items-center gap-1">
-                  <MapPin className="w-3.5 h-3.5 text-[#e50914]" />
+                  <MapPin className="w-3.5 h-3.5 text-[#10b981]" />
                   <span>{job.location}</span>
                 </span>
                 <span>•</span>
@@ -230,7 +230,7 @@ export default function JobsPortal({ jobs, onRefresh }) {
                     value={company}
                     onChange={e => setCompany(e.target.value)}
                     placeholder="e.g. Cohesity, Google, Belc"
-                    className={`w-full p-2.5 rounded border focus:border-[#e50914] outline-none ${
+                    className={`w-full p-2.5 rounded border focus:border-[#10b981] outline-none ${
                       isDark ? 'bg-[#1c1c1c] border-[#5a5a5a] text-white' : 'bg-white border-slate-300 text-slate-900'
                     }`}
                   />
@@ -243,7 +243,7 @@ export default function JobsPortal({ jobs, onRefresh }) {
                     value={role}
                     onChange={e => setRole(e.target.value)}
                     placeholder="Software Development Engineer"
-                    className={`w-full p-2.5 rounded border focus:border-[#e50914] outline-none ${
+                    className={`w-full p-2.5 rounded border focus:border-[#10b981] outline-none ${
                       isDark ? 'bg-[#1c1c1c] border-[#5a5a5a] text-white' : 'bg-white border-slate-300 text-slate-900'
                     }`}
                   />
@@ -259,7 +259,7 @@ export default function JobsPortal({ jobs, onRefresh }) {
                     value={ctc}
                     onChange={e => setCtc(e.target.value)}
                     placeholder="₹24.0 LPA"
-                    className={`w-full p-2.5 rounded border focus:border-[#e50914] outline-none ${
+                    className={`w-full p-2.5 rounded border focus:border-[#10b981] outline-none ${
                       isDark ? 'bg-[#1c1c1c] border-[#5a5a5a] text-white' : 'bg-white border-slate-300 text-slate-900'
                     }`}
                   />
@@ -271,7 +271,7 @@ export default function JobsPortal({ jobs, onRefresh }) {
                     value={location}
                     onChange={e => setLocation(e.target.value)}
                     placeholder="Bengaluru / Tokyo"
-                    className={`w-full p-2.5 rounded border focus:border-[#e50914] outline-none ${
+                    className={`w-full p-2.5 rounded border focus:border-[#10b981] outline-none ${
                       isDark ? 'bg-[#1c1c1c] border-[#5a5a5a] text-white' : 'bg-white border-slate-300 text-slate-900'
                     }`}
                   />
@@ -286,7 +286,7 @@ export default function JobsPortal({ jobs, onRefresh }) {
                     required
                     value={deadline}
                     onChange={e => setDeadline(e.target.value)}
-                    className={`w-full p-2.5 rounded border focus:border-[#e50914] outline-none ${
+                    className={`w-full p-2.5 rounded border focus:border-[#10b981] outline-none ${
                       isDark ? 'bg-[#1c1c1c] border-[#5a5a5a] text-white' : 'bg-white border-slate-300 text-slate-900'
                     }`}
                   />
@@ -299,7 +299,7 @@ export default function JobsPortal({ jobs, onRefresh }) {
                     value={applyUrl}
                     onChange={e => setApplyUrl(e.target.value)}
                     placeholder="https://..."
-                    className={`w-full p-2.5 rounded border focus:border-[#e50914] outline-none ${
+                    className={`w-full p-2.5 rounded border focus:border-[#10b981] outline-none ${
                       isDark ? 'bg-[#1c1c1c] border-[#5a5a5a] text-white' : 'bg-white border-slate-300 text-slate-900'
                     }`}
                   />
@@ -314,7 +314,7 @@ export default function JobsPortal({ jobs, onRefresh }) {
                   value={eligibility}
                   onChange={e => setEligibility(e.target.value)}
                   placeholder="B.E CS/IS/EC, CGPA >= 7.5, No backlogs"
-                  className={`w-full p-2.5 rounded border focus:border-[#e50914] outline-none ${
+                  className={`w-full p-2.5 rounded border focus:border-[#10b981] outline-none ${
                     isDark ? 'bg-[#1c1c1c] border-[#5a5a5a] text-white' : 'bg-white border-slate-300 text-slate-900'
                   }`}
                 />
@@ -327,7 +327,7 @@ export default function JobsPortal({ jobs, onRefresh }) {
                   value={description}
                   onChange={e => setDescription(e.target.value)}
                   placeholder="Key responsibilities and technical expectations..."
-                  className={`w-full p-2.5 rounded border focus:border-[#e50914] outline-none ${
+                  className={`w-full p-2.5 rounded border focus:border-[#10b981] outline-none ${
                     isDark ? 'bg-[#1c1c1c] border-[#5a5a5a] text-white' : 'bg-white border-slate-300 text-slate-900'
                   }`}
                 />

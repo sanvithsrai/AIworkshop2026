@@ -313,7 +313,7 @@ function MainApp() {
       <div className="fixed bottom-5 right-5 z-40">
         <button
           onClick={() => setChatbotOpen(true)}
-          className="w-12 h-12 rounded-full bg-[#10b981] hover:bg-[#b80710] text-white flex items-center justify-center shadow-2xl hover:scale-105 transition-all shadow-[#e50914]/40 border-2 border-white/20"
+          className="w-12 h-12 rounded-full bg-[#10b981] hover:bg-[#059669] text-white flex items-center justify-center shadow-2xl hover:scale-105 transition-all shadow-[#10b981]/40 border-2 border-white/20"
           title="Open Placement AI Copilot"
           aria-label="Open AI Copilot"
         >

@@ -44,7 +44,7 @@ export default function TestCorner({ exams = [], loading = false, onSelectExam, 
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:flex-wrap md:items-end justify-between gap-4 mb-8">
         <div>
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-[#e50914]/20 border border-[#e50914]/40 text-[#e50914] text-xs font-bold uppercase mb-2">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-[#10b981]/20 border border-[#10b981]/40 text-[#10b981] text-xs font-bold uppercase mb-2">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Standardized Proctored MCQs</span>
           </div>
@@ -70,7 +70,7 @@ export default function TestCorner({ exams = [], loading = false, onSelectExam, 
                 onClick={() => setSelectedDifficulty(d)}
                 className={`px-3 py-1 rounded text-xs font-semibold transition-all ${
                   selectedDifficulty === d
-                    ? 'bg-[#e50914] text-white shadow-sm font-bold'
+                    ? 'bg-[#10b981] text-white shadow-sm font-bold'
                     : isDark ? 'text-[#808080] hover:text-white' : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -89,10 +89,10 @@ export default function TestCorner({ exams = [], loading = false, onSelectExam, 
             onClick={() => setSelectedCategory(cat.id)}
             className={`whitespace-nowrap px-4 py-2 rounded-full text-xs font-bold transition-all ${
               selectedCategory === cat.id
-                ? 'bg-[#e50914] text-white shadow-lg shadow-[#e50914]/30'
+                ? 'bg-[#10b981] text-white shadow-lg shadow-[#10b981]/30'
                 : isDark 
-                  ? 'bg-[#1c1c1c] text-[#808080] border border-[#2d2d2d] hover:border-[#e50914] hover:text-white' 
-                  : 'bg-white text-slate-700 border border-slate-300 hover:border-[#e50914] hover:text-slate-900 shadow-sm'
+                  ? 'bg-[#1c1c1c] text-[#808080] border border-[#2d2d2d] hover:border-[#10b981] hover:text-white' 
+                  : 'bg-white text-slate-700 border border-slate-300 hover:border-[#10b981] hover:text-slate-900 shadow-sm'
             }`}
           >
             {cat.label}
@@ -103,7 +103,7 @@ export default function TestCorner({ exams = [], loading = false, onSelectExam, 
       {/* Test Cards Grid */}
       {loading && exams.length === 0 ? (
         <div className="py-20 text-center">
-          <div className="w-10 h-10 border-3 border-[#e50914] border-t-transparent rounded-full animate-spin mx-auto mb-3" />
+          <div className="w-10 h-10 border-3 border-[#10b981] border-t-transparent rounded-full animate-spin mx-auto mb-3" />
           <p className={`text-xs ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Loading placement assessment tests...</p>
         </div>
       ) : filteredExams.length === 0 ? (
@@ -115,7 +115,7 @@ export default function TestCorner({ exams = [], loading = false, onSelectExam, 
           <p className={`text-xs ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Try broadening your search or resetting category filters.</p>
           <button
             onClick={() => { setSelectedCategory('All'); setSelectedDifficulty('All'); }}
-            className="mt-4 px-4 py-2 bg-[#e50914] text-white text-xs font-bold rounded hover:bg-[#b80710]"
+            className="mt-4 px-4 py-2 bg-[#10b981] text-white text-xs font-bold rounded hover:bg-[#059669]"
           >
             Reset Filters
           </button>
@@ -144,7 +144,7 @@ export default function TestCorner({ exams = [], loading = false, onSelectExam, 
                     <div className="flex items-center gap-1.5 flex-wrap">
                       <span className={`text-[10px] font-extrabold uppercase px-2 py-0.5 rounded ${
                         isDemo
-                          ? 'bg-[#e50914]/20 text-[#e50914] border border-[#e50914]/40'
+                          ? 'bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40'
                           : isJapanese
                             ? 'bg-rose-500/20 text-rose-500 border border-rose-500/40'
                             : isDark ? 'bg-[#2d2d2d] text-[#808080]' : 'bg-slate-100 text-slate-600'
@@ -163,7 +163,7 @@ export default function TestCorner({ exams = [], loading = false, onSelectExam, 
                         ? 'text-emerald-500 bg-emerald-500/10 border border-emerald-500/20' 
                         : exam.difficulty === 'Medium' 
                           ? 'text-rose-500 bg-rose-500/10 border border-rose-500/20' 
-                          : 'text-[#e50914] bg-[#e50914]/10 border border-[#e50914]/20 font-bold'
+                          : 'text-[#10b981] bg-[#10b981]/10 border border-[#10b981]/20 font-bold'
                     }`}>
                       {exam.difficulty}
                     </span>
@@ -171,7 +171,7 @@ export default function TestCorner({ exams = [], loading = false, onSelectExam, 
 
                   {/* Exam Title */}
                   <h3 className={`text-base font-bold transition-colors leading-snug mb-2 line-clamp-2 ${
-                    isDark ? 'text-white group-hover:text-[#e50914]' : 'text-slate-900 group-hover:text-[#e50914]'
+                    isDark ? 'text-white group-hover:text-[#10b981]' : 'text-slate-900 group-hover:text-[#10b981]'
                   }`}>
                     {exam.title}
                   </h3>
@@ -201,7 +201,7 @@ export default function TestCorner({ exams = [], loading = false, onSelectExam, 
                     </div>
                     <div>
                       <span className={`block text-[10px] ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Pass Mark</span>
-                      <span className="font-semibold text-[#e50914]">{exam.passing_marks}/{exam.total_marks}</span>
+                      <span className="font-semibold text-[#10b981]">{exam.passing_marks}/{exam.total_marks}</span>
                     </div>
                   </div>
 

@@ -20,7 +20,7 @@ export default function PlacementTracker({ recruitersData }) {
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
         <div>
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-[#e50914]/20 border border-[#e50914]/40 text-[#e50914] text-xs font-bold uppercase mb-2">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-[#10b981]/20 border border-[#10b981]/40 text-[#10b981] text-xs font-bold uppercase mb-2">
             <Building2 className="w-3.5 h-3.5" />
             <span>Corporate Recruitment Pipeline</span>
           </div>
@@ -40,7 +40,7 @@ export default function PlacementTracker({ recruitersData }) {
               key={tab}
               onClick={() => setFilter(tab)}
               className={`px-4 py-1.5 rounded text-xs font-bold transition-all ${filter === tab
-                  ? 'bg-[#e50914] text-white shadow'
+                  ? 'bg-[#10b981] text-white shadow'
                   : isDark ? 'text-[#808080] hover:text-white' : 'text-slate-600 hover:text-slate-900'
                 }`}
             >
@@ -59,12 +59,12 @@ export default function PlacementTracker({ recruitersData }) {
         </div>
         <div className={isDark ? 'card-feature-gradient p-4 rounded-xl' : 'bg-white border border-slate-200 p-4 rounded-xl shadow-sm'}>
           <span className={`text-xs block ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Upcoming / Ongoing</span>
-          <span className="text-2xl font-black text-[#e50914]">{stats.upcomingCount || 2}</span>
+          <span className="text-2xl font-black text-[#10b981]">{stats.upcomingCount || 2}</span>
           <span className={`text-[11px] mt-0.5 block ${isDark ? 'text-[#b3b3b3]' : 'text-slate-500'}`}>Scheduled Soon</span>
         </div>
         <div className={isDark ? 'card-feature-gradient p-4 rounded-xl' : 'bg-white border border-slate-200 p-4 rounded-xl shadow-sm'}>
           <span className={`text-xs block ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Highest International</span>
-          <span className="text-2xl font-black text-[#e50914]">47.24 LPA</span>
+          <span className="text-2xl font-black text-[#10b981]">47.24 LPA</span>
           <span className={`text-[11px] mt-0.5 block ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Belc Co., Ltd. (Japan)</span>
         </div>
         <div className={isDark ? 'card-feature-gradient p-4 rounded-xl' : 'bg-white border border-slate-200 p-4 rounded-xl shadow-sm'}>
@@ -84,8 +84,8 @@ export default function PlacementTracker({ recruitersData }) {
             <div
               key={company.id}
               className={`p-5 rounded-2xl flex flex-col justify-between group transition-all ${isDark
-                  ? 'card-feature-gradient border border-[#5a5a5a]/30 hover:border-[#e50914]'
-                  : 'bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-[#e50914]'
+                  ? 'card-feature-gradient border border-[#5a5a5a]/30 hover:border-[#10b981]'
+                  : 'bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-[#10b981]'
                 }`}
             >
               <div>
@@ -95,7 +95,7 @@ export default function PlacementTracker({ recruitersData }) {
                       ? 'bg-emerald-500/10 text-emerald-500 border border-emerald-500/30'
                       : isOngoing
                         ? 'bg-purple-500/10 text-purple-500 border border-purple-500/30'
-                        : 'bg-[#e50914]/10 text-[#e50914] border border-[#e50914]/30'
+                        : 'bg-[#10b981]/10 text-[#10b981] border border-[#10b981]/30'
                     }`}>
                     {isAttended ? <CheckCircle className="w-3 h-3" /> : <Clock className="w-3 h-3" />}
                     <span>{company.status}</span>
@@ -107,7 +107,7 @@ export default function PlacementTracker({ recruitersData }) {
                 </div>
 
                 {/* Company Name & Sector */}
-                <h3 className={`text-lg font-bold transition-colors mb-1 ${isDark ? 'text-white group-hover:text-[#e50914]' : 'text-slate-900 group-hover:text-[#e50914]'
+                <h3 className={`text-lg font-bold transition-colors mb-1 ${isDark ? 'text-white group-hover:text-[#10b981]' : 'text-slate-900 group-hover:text-[#10b981]'
                   }`}>
                   {company.name}
                 </h3>
@@ -120,7 +120,7 @@ export default function PlacementTracker({ recruitersData }) {
                   }`}>
                   <div>
                     <span className={`block text-[10px] ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Peak Offer</span>
-                    <span className="font-bold text-[#e50914] text-sm">{company.highest_package}</span>
+                    <span className="font-bold text-[#10b981] text-sm">{company.highest_package}</span>
                   </div>
                   <div>
                     <span className={`block text-[10px] ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Offers Made</span>
@@ -145,7 +145,7 @@ export default function PlacementTracker({ recruitersData }) {
               <div className={`pt-3 border-t flex items-center justify-between text-xs ${isDark ? 'border-[#2d2d2d]' : 'border-slate-200'
                 }`}>
                 <span className={isDark ? 'text-[#808080]' : 'text-slate-500'}>Drive Coord: Placement Cell</span>
-                <span className="text-[#e50914] font-bold flex items-center gap-1 group-hover:underline cursor-pointer">
+                <span className="text-[#10b981] font-bold flex items-center gap-1 group-hover:underline cursor-pointer">
                   <span>View Details</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </span>

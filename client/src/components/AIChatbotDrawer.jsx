@@ -97,7 +97,7 @@ export default function AIChatbotDrawer({ isOpen, onClose, onLaunchAdminCall }) 
       <div className={`border-b p-4 flex items-center justify-between ${isDark ? 'bg-[#141414] border-[#262626]' : 'bg-slate-50 border-slate-200'
         }`}>
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-lg bg-[#e50914] flex items-center justify-center text-white shadow-md">
+          <div className="w-8 h-8 rounded-lg bg-[#10b981] flex items-center justify-center text-white shadow-md">
             <Bot className="w-5 h-5 text-white" />
           </div>
           <div>
@@ -129,14 +129,14 @@ export default function AIChatbotDrawer({ isOpen, onClose, onLaunchAdminCall }) 
               key={idx}
               className={`flex items-start gap-2.5 ${isBot ? '' : 'flex-row-reverse'}`}
             >
-              <div className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 ${isBot ? 'bg-[#e50914] text-white' : isDark ? 'bg-[#262626] text-[#b3b3b3]' : 'bg-slate-200 text-slate-700'
+              <div className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 ${isBot ? 'bg-[#10b981] text-white' : isDark ? 'bg-[#262626] text-[#b3b3b3]' : 'bg-slate-200 text-slate-700'
                 }`}>
                 {isBot ? <Bot className="w-4 h-4 text-white" /> : <User className="w-4 h-4" />}
               </div>
 
               <div className={`max-w-[85%] p-3 rounded-2xl ${isBot
                   ? isDark ? 'bg-[#181818] border border-[#2d2d2d] text-white' : 'bg-slate-100 border border-slate-200 text-slate-900'
-                  : 'bg-[#e50914] text-white font-medium shadow-md'
+                  : 'bg-[#10b981] text-white font-medium shadow-md'
                 }`}>
                 <div className="whitespace-pre-wrap">{msg.content}</div>
 
@@ -146,7 +146,7 @@ export default function AIChatbotDrawer({ isOpen, onClose, onLaunchAdminCall }) 
                     <span>SPACE Placement Advisor</span>
                     <button
                       onClick={() => handleSpeak(msg.content, idx)}
-                      className={`hover:text-[#e50914] flex items-center gap-1 ${speakingIdx === idx ? 'text-[#e50914] font-bold animate-pulse' : ''
+                      className={`hover:text-[#10b981] flex items-center gap-1 ${speakingIdx === idx ? 'text-[#10b981] font-bold animate-pulse' : ''
                         }`}
                     >
                       <Volume2 className="w-3.5 h-3.5" />
@@ -161,7 +161,7 @@ export default function AIChatbotDrawer({ isOpen, onClose, onLaunchAdminCall }) 
 
         {loading && (
           <div className={`flex items-center gap-2 text-xs italic py-2 ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
-            <div className="w-3 h-3 border-2 border-[#e50914] border-t-transparent rounded-full animate-spin" />
+            <div className="w-3 h-3 border-2 border-[#10b981] border-t-transparent rounded-full animate-spin" />
             <span>Consulting Sahyadri Placement knowledge base...</span>
           </div>
         )}
@@ -198,13 +198,13 @@ export default function AIChatbotDrawer({ isOpen, onClose, onLaunchAdminCall }) 
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Ask about recruiters, Japanese tests, cutoffs..."
-            className={`flex-1 rounded-lg px-3 py-2 text-xs outline-none focus:border-[#e50914] border ${isDark ? 'bg-[#0f0f0f] border-[#333333] text-white placeholder-[#808080]' : 'bg-white border-slate-300 text-slate-900 placeholder-slate-400'
+            className={`flex-1 rounded-lg px-3 py-2 text-xs outline-none focus:border-[#10b981] border ${isDark ? 'bg-[#0f0f0f] border-[#333333] text-white placeholder-[#808080]' : 'bg-white border-slate-300 text-slate-900 placeholder-slate-400'
               }`}
           />
           <button
             type="submit"
             disabled={!input.trim() || loading}
-            className="p-2 rounded-lg bg-[#e50914] text-white hover:bg-[#b80710] disabled:opacity-50 transition-colors"
+            className="p-2 rounded-lg bg-[#10b981] text-white hover:bg-[#059669] disabled:opacity-50 transition-colors"
           >
             <Send className="w-4 h-4 text-white" />
           </button>

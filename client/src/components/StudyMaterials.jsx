@@ -25,7 +25,7 @@ export default function StudyMaterials({ materials }) {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
         <div>
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-[#e50914]/20 border border-[#e50914]/40 text-[#e50914] text-xs font-bold uppercase mb-2">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-[#10b981]/20 border border-[#10b981]/40 text-[#10b981] text-xs font-bold uppercase mb-2">
             <BookOpen className="w-3.5 h-3.5" />
             <span>Curated Placement Knowledge Bank</span>
           </div>
@@ -45,7 +45,7 @@ export default function StudyMaterials({ materials }) {
             key={cat}
             onClick={() => setSelectedCategory(cat)}
             className={`whitespace-nowrap px-4 py-1.5 rounded-full text-xs font-bold transition-all ${selectedCategory === cat
-                ? 'bg-[#e50914] text-white shadow-lg shadow-[#e50914]/30'
+                ? 'bg-[#10b981] text-white shadow-lg shadow-[#10b981]/30'
                 : isDark
                   ? 'bg-[#1c1c1c] text-[#b3b3b3] border border-[#2d2d2d] hover:text-white'
                   : 'bg-white text-slate-700 border border-slate-300 hover:text-black shadow-sm'
@@ -62,8 +62,8 @@ export default function StudyMaterials({ materials }) {
           <div
             key={mat.id}
             className={`p-6 rounded-2xl flex flex-col justify-between group transition-all ${isDark
-                ? 'card-feature-gradient border border-[#5a5a5a]/30 hover:border-[#e50914]'
-                : 'bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-[#e50914]'
+                ? 'card-feature-gradient border border-[#5a5a5a]/30 hover:border-[#10b981]'
+                : 'bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-[#10b981]'
               }`}
           >
             <div>
@@ -80,7 +80,7 @@ export default function StudyMaterials({ materials }) {
                 </span>
               </div>
 
-              <h3 className={`text-base font-bold transition-colors mb-2 ${isDark ? 'text-white group-hover:text-[#e50914]' : 'text-slate-900 group-hover:text-[#e50914]'
+              <h3 className={`text-base font-bold transition-colors mb-2 ${isDark ? 'text-white group-hover:text-[#10b981]' : 'text-slate-900 group-hover:text-[#10b981]'
                 }`}>
                 {mat.title}
               </h3>
@@ -134,7 +134,7 @@ export default function StudyMaterials({ materials }) {
             <div className={`p-5 border-b flex items-start justify-between gap-4 ${isDark ? 'border-[#2d2d2d]' : 'border-slate-200'
               }`}>
               <div>
-                <span className="text-xs font-bold text-[#e50914] uppercase block mb-1">
+                <span className="text-xs font-bold text-[#10b981] uppercase block mb-1">
                   {activeMaterial.category} Reference Guide
                 </span>
                 <h3 className={`text-lg font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>

@@ -27,7 +27,7 @@ export default function ShelfCarousel({ title, subtitle, badge, children, seeAll
               {title}
             </h2>
             {badge && (
-              <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-[#e50914] text-white">
+              <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-[#10b981] text-white">
                 {badge}
               </span>
             )}
@@ -42,7 +42,7 @@ export default function ShelfCarousel({ title, subtitle, badge, children, seeAll
         {seeAllAction && (
           <button
             onClick={seeAllAction}
-            className="text-xs sm:text-sm text-[#e50914] hover:text-[#b80710] font-semibold flex items-center gap-1 transition-colors"
+            className="text-xs sm:text-sm text-[#10b981] hover:text-[#059669] font-semibold flex items-center gap-1 transition-colors"
           >
             <span>Explore All</span>
             <ChevronRight className="w-4 h-4" />

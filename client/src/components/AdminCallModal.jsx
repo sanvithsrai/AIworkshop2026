@@ -118,7 +118,7 @@ export default function AdminCallModal({ isOpen, onClose }) {
         {/* Modal Top Bar */}
         <div className="bg-[#1c1c1c] border-b border-[#2d2d2d] p-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-[#e50914] flex items-center justify-center text-white shadow-md">
+            <div className="w-8 h-8 rounded-full bg-[#10b981] flex items-center justify-center text-white shadow-md">
               <PhoneCall className="w-4 h-4" />
             </div>
             <div>
@@ -139,7 +139,7 @@ export default function AdminCallModal({ isOpen, onClose }) {
 
           {callState === 'idle' && (
             <div className="w-full">
-              <div className="w-16 h-16 rounded-full bg-[#222222] border border-[#3d3d3d] flex items-center justify-center mx-auto mb-4 text-[#e50914] shadow-xl">
+              <div className="w-16 h-16 rounded-full bg-[#222222] border border-[#3d3d3d] flex items-center justify-center mx-auto mb-4 text-[#10b981] shadow-xl">
                 <Building2 className="w-8 h-8" />
               </div>
               <h4 className="text-lg font-black text-white mb-1">
@@ -159,7 +159,7 @@ export default function AdminCallModal({ isOpen, onClose }) {
                       key={i}
                       onClick={() => setQueryTopic(topic)}
                       className={`w-full text-left p-2.5 rounded-lg text-xs transition-colors border ${queryTopic === topic
-                        ? 'bg-[#e50914]/20 border-[#e50914] text-white font-bold'
+                        ? 'bg-[#10b981]/20 border-[#10b981] text-white font-bold'
                         : 'bg-[#1c1c1c] border-[#2d2d2d] text-[#b3b3b3] hover:text-white'
                         }`}
                     >
@@ -173,13 +173,13 @@ export default function AdminCallModal({ isOpen, onClose }) {
                   value={queryTopic}
                   onChange={e => setQueryTopic(e.target.value)}
                   placeholder="Or type custom inquiry..."
-                  className="w-full p-2.5 rounded-lg bg-[#181818] border border-[#333333] text-xs text-white outline-none focus:border-[#e50914]"
+                  className="w-full p-2.5 rounded-lg bg-[#181818] border border-[#333333] text-xs text-white outline-none focus:border-[#10b981]"
                 />
               </div>
 
               <button
                 onClick={handleStartCall}
-                className="w-full btn-netflix-primary py-3 rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow-xl shadow-[#e50914]/25"
+                className="w-full btn-netflix-primary py-3 rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow-xl shadow-[#10b981]/25"
               >
                 <PhoneCall className="w-4 h-4" />
                 <span>Call Administration & Patch Line</span>
@@ -190,8 +190,8 @@ export default function AdminCallModal({ isOpen, onClose }) {
           {callState === 'dialing' && (
             <div className="py-8">
               <div className="relative w-24 h-24 mx-auto mb-6 flex items-center justify-center">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e50914] opacity-30"></span>
-                <div className="w-20 h-20 rounded-full bg-[#e50914] flex items-center justify-center shadow-2xl">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10b981] opacity-30"></span>
+                <div className="w-20 h-20 rounded-full bg-[#10b981] flex items-center justify-center shadow-2xl">
                   <PhoneCall className="w-8 h-8 text-white animate-bounce" />
                 </div>
               </div>
@@ -202,7 +202,7 @@ export default function AdminCallModal({ isOpen, onClose }) {
               <p className="text-xs text-[#808080] font-mono">
                 +91-824-2277222 (SPACE Placement Cell, Sahyadri)
               </p>
-              <p className="text-[11px] text-[#e50914] mt-4 font-semibold animate-pulse">
+              <p className="text-[11px] text-[#10b981] mt-4 font-semibold animate-pulse">
                 AI Assistant establishing caller triage...
               </p>
             </div>
@@ -214,10 +214,10 @@ export default function AdminCallModal({ isOpen, onClose }) {
               <div className="flex items-center justify-between bg-black/60 p-3 rounded-xl border border-[#2d2d2d] mb-4 text-xs">
                 <div className="flex items-center gap-2">
                   <span className="relative flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e50914] opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-[#e50914]"></span>
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10b981] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-[#10b981]"></span>
                   </span>
-                  <span className="text-[#e50914] font-bold">FORWARDED LIVE</span>
+                  <span className="text-[#10b981] font-bold">FORWARDED LIVE</span>
                 </div>
                 <div className="font-mono text-sm font-bold text-white">
                   {formatCallTime(callDuration)}
@@ -229,7 +229,7 @@ export default function AdminCallModal({ isOpen, onClose }) {
                 {[40, 75, 90, 50, 100, 60, 85, 45, 95, 30].map((h, i) => (
                   <div
                     key={i}
-                    className="w-1.5 bg-[#e50914] rounded-full animate-pulse"
+                    className="w-1.5 bg-[#10b981] rounded-full animate-pulse"
                     style={{
                       height: `${h}%`,
                       animationDuration: `${0.4 + (i % 3) * 0.2}s`
@@ -244,7 +244,7 @@ export default function AdminCallModal({ isOpen, onClose }) {
                   Live Conversation Transcript:
                 </span>
                 {callData?.transcript?.slice(0, activeStep + 1).map((step, idx) => (
-                  <div key={idx} className="border-l-2 border-[#e50914] pl-3 py-0.5">
+                  <div key={idx} className="border-l-2 border-[#10b981] pl-3 py-0.5">
                     <div className="flex items-center justify-between text-[10px] text-[#808080] mb-0.5">
                       <strong className="text-white">{step.speaker}</strong>
                       <span className="font-mono">{step.timestamp}</span>
@@ -260,7 +260,7 @@ export default function AdminCallModal({ isOpen, onClose }) {
               <div className="flex items-center justify-center gap-4">
                 <button
                   onClick={() => setIsMuted(!isMuted)}
-                  className={`p-3 rounded-full border transition-colors ${isMuted ? 'bg-[#e50914] text-white border-[#e50914]' : 'bg-[#2d2d2d] text-white border-[#5a5a5a] hover:bg-[#414141]'
+                  className={`p-3 rounded-full border transition-colors ${isMuted ? 'bg-[#10b981] text-white border-[#10b981]' : 'bg-[#2d2d2d] text-white border-[#5a5a5a] hover:bg-[#414141]'
                     }`}
                   title={isMuted ? 'Unmute' : 'Mute'}
                 >
@@ -280,7 +280,7 @@ export default function AdminCallModal({ isOpen, onClose }) {
 
           {callState === 'ended' && (
             <div className="py-8">
-              <CheckCircle2 className="w-16 h-16 text-[#e50914] mx-auto mb-3" />
+              <CheckCircle2 className="w-16 h-16 text-[#10b981] mx-auto mb-3" />
               <h4 className="text-lg font-bold text-white mb-1">Call Completed</h4>
               <p className="text-xs text-[#808080]">
                 Inquiry logged in Placement Admin Desk. Thank you for connecting.

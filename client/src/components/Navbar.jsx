@@ -197,13 +197,13 @@ export default function Navbar({
               onClick={toggleTheme}
               className={`p-2 rounded-xl border text-xs font-bold transition-all flex items-center justify-center shadow-sm shrink-0 ${
                 isDark 
-                  ? 'bg-[#181818] border-[#333333] text-amber-300 hover:text-white hover:bg-[#262626]' 
+                  ? 'bg-[#181818] border-[#333333] text-emerald-300 hover:text-white hover:bg-[#262626]' 
                   : 'bg-slate-100 border-slate-300 text-slate-800 hover:text-black hover:bg-slate-200'
               }`}
               title={isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
               aria-label="Toggle UI Theme"
             >
-              {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-700" />}
+              {isDark ? <Sun className="w-4 h-4 text-emerald-400" /> : <Moon className="w-4 h-4 text-slate-700" />}
             </button>
 
             {/* Mobile Menu Hamburger Toggle (only on screens < 1024px) */}
@@ -229,10 +229,10 @@ export default function Navbar({
               <button
                 onClick={toggleTheme}
                 className={`flex items-center gap-2 text-xs font-bold py-1.5 px-3 rounded-lg border transition-all ${
-                  isDark ? 'bg-[#222222] border-[#333333] text-amber-300' : 'bg-white border-slate-300 text-slate-800'
+                  isDark ? 'bg-[#222222] border-[#333333] text-emerald-300' : 'bg-white border-slate-300 text-slate-800'
                 }`}
               >
-                {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-slate-700" />}
+                {isDark ? <Sun className="w-4 h-4 text-emerald-400" /> : <Moon className="w-4 h-4 text-slate-700" />}
                 <span>Theme: {isDark ? 'Dark Mode' : 'Light Mode'}</span>
               </button>
 

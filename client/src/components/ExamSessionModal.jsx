@@ -122,7 +122,7 @@ export default function ExamSessionModal({ examId, onClose, onExamCompleted }) {
     return (
       <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4">
         <div className="text-center">
-          <div className="w-12 h-12 border-4 border-[#e50914] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+          <div className="w-12 h-12 border-4 border-[#10b981] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
           <p className="text-sm font-semibold text-white">Loading Proctored Test Environment...</p>
         </div>
       </div>
@@ -139,7 +139,7 @@ export default function ExamSessionModal({ examId, onClose, onExamCompleted }) {
       {/* Test Engine Header */}
       <div className="bg-[#141414] border-b border-[#2d2d2d] px-4 sm:px-6 py-3.5 flex items-center justify-between gap-4">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded bg-[#e50914] flex items-center justify-center font-black text-white text-sm">
+          <div className="w-8 h-8 rounded bg-[#10b981] flex items-center justify-center font-black text-white text-sm">
             SC
           </div>
           <div>
@@ -157,7 +157,7 @@ export default function ExamSessionModal({ examId, onClose, onExamCompleted }) {
         {/* Right Status & Controls */}
         <div className="flex items-center gap-3">
           {!results && (
-            <div className={`flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-mono font-bold ${isTimeCritical ? 'bg-[#e50914] text-white animate-pulse' : 'bg-[#2d2d2d] text-white'
+            <div className={`flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-mono font-bold ${isTimeCritical ? 'bg-[#10b981] text-white animate-pulse' : 'bg-[#2d2d2d] text-white'
               }`}>
               <Clock className="w-3.5 h-3.5" />
               <span>{formatTimer(timeLeft)}</span>
@@ -184,17 +184,17 @@ export default function ExamSessionModal({ examId, onClose, onExamCompleted }) {
               <div className="max-w-3xl mx-auto w-full">
                 {/* Question Info Bar */}
                 <div className="flex items-center justify-between text-xs text-[#808080] mb-4 pb-2 border-b border-[#2d2d2d]">
-                  <span className="font-bold text-[#e50914]">
+                  <span className="font-bold text-[#10b981]">
                     Question {currentIndex + 1} of {questions.length}
                   </span>
                   <div className="flex items-center gap-3">
                     <span>Marks: +{currentQ.marks || 5}</span>
                     <button
                       onClick={() => handleToggleFlag(currentQ.id)}
-                      className={`flex items-center gap-1 text-xs font-medium transition-colors ${flagged[currentQ.id] ? 'text-[#e50914] font-bold' : 'text-[#808080] hover:text-white'
+                      className={`flex items-center gap-1 text-xs font-medium transition-colors ${flagged[currentQ.id] ? 'text-[#10b981] font-bold' : 'text-[#808080] hover:text-white'
                         }`}
                     >
-                      <Flag className={`w-3.5 h-3.5 ${flagged[currentQ.id] ? 'fill-[#e50914] text-[#e50914]' : ''}`} />
+                      <Flag className={`w-3.5 h-3.5 ${flagged[currentQ.id] ? 'fill-[#10b981] text-[#10b981]' : ''}`} />
                       <span>{flagged[currentQ.id] ? 'Flagged' : 'Flag for Review'}</span>
                     </button>
                   </div>
@@ -279,7 +279,7 @@ export default function ExamSessionModal({ examId, onClose, onExamCompleted }) {
                   <span>Answered ({answeredCount})</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <span className="w-3 h-3 rounded-full bg-[#e50914]"></span>
+                  <span className="w-3 h-3 rounded-full bg-[#10b981]"></span>
                   <span>Flagged ({Object.values(flagged).filter(Boolean).length})</span>
                 </div>
                 <div className="flex items-center gap-1.5">
@@ -287,7 +287,7 @@ export default function ExamSessionModal({ examId, onClose, onExamCompleted }) {
                   <span>Unanswered ({questions.length - answeredCount})</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <span className="w-3 h-3 rounded-full ring-2 ring-[#e50914]"></span>
+                  <span className="w-3 h-3 rounded-full ring-2 ring-[#10b981]"></span>
                   <span>Current</span>
                 </div>
               </div>
@@ -303,15 +303,15 @@ export default function ExamSessionModal({ examId, onClose, onExamCompleted }) {
                     <button
                       key={q.id}
                       onClick={() => setCurrentIndex(idx)}
-                      className={`h-9 rounded-lg text-xs font-bold transition-all relative ${isCurrent ? 'ring-2 ring-[#e50914] scale-105' : ''
+                      className={`h-9 rounded-lg text-xs font-bold transition-all relative ${isCurrent ? 'ring-2 ring-[#10b981] scale-105' : ''
                         } ${isAnswered ? 'bg-emerald-600 text-white' :
-                          isFlagged ? 'bg-[#e50914] text-white' :
+                          isFlagged ? 'bg-[#10b981] text-white' :
                             'bg-[#222222] text-[#808080] hover:text-white'
                         }`}
                     >
                       {idx + 1}
                       {isFlagged && (
-                        <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-[#e50914] ring-1 ring-black" />
+                        <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-[#10b981] ring-1 ring-black" />
                       )}
                     </button>
                   );
@@ -348,7 +348,7 @@ export default function ExamSessionModal({ examId, onClose, onExamCompleted }) {
               <h2 className="text-3xl sm:text-4xl font-black text-white mb-2">
                 Your Score: {results.score} / {results.total_marks}
               </h2>
-              <p className="text-lg font-bold text-[#e50914] mb-6">
+              <p className="text-lg font-bold text-[#10b981] mb-6">
                 {results.percentage}% Aggregate Score
               </p>
 
@@ -395,7 +395,7 @@ export default function ExamSessionModal({ examId, onClose, onExamCompleted }) {
             {/* Question-by-Question Review with Explanations */}
             <div className="space-y-5">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <BookOpen className="w-5 h-5 text-[#e50914]" />
+                <BookOpen className="w-5 h-5 text-[#10b981]" />
                 <span>Detailed Question Review & Explanations</span>
               </h3>
 
@@ -450,7 +450,7 @@ export default function ExamSessionModal({ examId, onClose, onExamCompleted }) {
       {showConfirmSubmit && (
         <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
           <div className="bg-[#1a1a1a] border border-[#5a5a5a] rounded-xl max-w-sm w-full p-6 text-center shadow-2xl">
-            <AlertCircle className="w-12 h-12 text-[#e50914] mx-auto mb-3" />
+            <AlertCircle className="w-12 h-12 text-[#10b981] mx-auto mb-3" />
             <h3 className="text-lg font-bold text-white mb-2">Submit Exam Session?</h3>
             <p className="text-xs text-[#b3b3b3] mb-6">
               You have answered <strong className="text-white">{answeredCount} of {questions.length}</strong> questions.

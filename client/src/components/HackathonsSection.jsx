@@ -12,7 +12,7 @@ export default function HackathonsSection({ hackathonsData }) {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
         <div>
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-[#e50914]/20 border border-[#e50914]/40 text-[#e50914] text-xs font-bold uppercase mb-2">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-[#10b981]/20 border border-[#10b981]/40 text-[#10b981] text-xs font-bold uppercase mb-2">
             <Terminal className="w-3.5 h-3.5" />
             <span>Competitive Coding & Innovation Arena</span>
           </div>
@@ -32,15 +32,15 @@ export default function HackathonsSection({ hackathonsData }) {
             key={hack.id}
             className={`p-6 rounded-2xl flex flex-col justify-between group transition-all ${
               isDark 
-                ? 'card-feature-gradient border border-[#5a5a5a]/30 hover:border-[#e50914]' 
-                : 'bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-[#e50914]'
+                ? 'card-feature-gradient border border-[#5a5a5a]/30 hover:border-[#10b981]' 
+                : 'bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-[#10b981]'
             }`}
           >
             <div>
               <div className="flex items-center justify-between mb-3">
                 <span className={`text-[10px] font-bold uppercase px-2 py-0.5 rounded ${
                   hack.category === 'Regional' 
-                    ? 'bg-[#e50914]/10 text-[#e50914] border border-[#e50914]/30' 
+                    ? 'bg-[#10b981]/10 text-[#10b981] border border-[#10b981]/30' 
                     : 'bg-purple-500/10 text-purple-500 border border-purple-500/30'
                 }`}>
                   {hack.category} Challenge
@@ -52,7 +52,7 @@ export default function HackathonsSection({ hackathonsData }) {
               </div>
 
               <h3 className={`text-lg font-black transition-colors mb-1 ${
-                isDark ? 'text-white group-hover:text-[#e50914]' : 'text-slate-900 group-hover:text-[#e50914]'
+                isDark ? 'text-white group-hover:text-[#10b981]' : 'text-slate-900 group-hover:text-[#10b981]'
               }`}>
                 {hack.title}
               </h3>
@@ -66,14 +66,14 @@ export default function HackathonsSection({ hackathonsData }) {
                 <div>
                   <span className={`block text-[10px] ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Dates</span>
                   <span className={`font-semibold flex items-center gap-1 mt-0.5 ${isDark ? 'text-white' : 'text-slate-900'}`}>
-                    <Calendar className="w-3.5 h-3.5 text-[#e50914]" />
+                    <Calendar className="w-3.5 h-3.5 text-[#10b981]" />
                     <span>{hack.dates}</span>
                   </span>
                 </div>
                 <div>
                   <span className={`block text-[10px] ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Prize Pool</span>
-                  <span className="font-bold text-[#e50914] flex items-center gap-1 mt-0.5">
-                    <Trophy className="w-3.5 h-3.5 text-[#e50914]" />
+                  <span className="font-bold text-[#10b981] flex items-center gap-1 mt-0.5">
+                    <Trophy className="w-3.5 h-3.5 text-[#10b981]" />
                     <span>{hack.prize_pool}</span>
                   </span>
                 </div>
@@ -109,7 +109,7 @@ export default function HackathonsSection({ hackathonsData }) {
       {liveNews.length > 0 && (
         <div className={`mt-8 pt-8 border-t ${isDark ? 'border-[#2d2d2d]' : 'border-slate-200'}`}>
           <div className="flex items-center gap-2 mb-4">
-            <Newspaper className="w-4 h-4 text-[#e50914]" />
+            <Newspaper className="w-4 h-4 text-[#10b981]" />
             <h3 className={`text-lg font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>
               Live Global Hackathon & Tech Feeds
             </h3>
@@ -127,8 +127,8 @@ export default function HackathonsSection({ hackathonsData }) {
                 rel="noreferrer"
                 className={`p-4 rounded-xl block group border transition-all ${
                   isDark 
-                    ? 'card-feature-gradient border-[#2d2d2d] hover:border-[#e50914]' 
-                    : 'bg-white border-slate-200 hover:border-[#e50914] shadow-sm hover:shadow-md'
+                    ? 'card-feature-gradient border-[#2d2d2d] hover:border-[#10b981]' 
+                    : 'bg-white border-slate-200 hover:border-[#10b981] shadow-sm hover:shadow-md'
                 }`}
               >
                 <div className={`text-[10px] mb-1 flex items-center justify-between ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
@@ -136,7 +136,7 @@ export default function HackathonsSection({ hackathonsData }) {
                   <span>{news.pubDate?.slice(0, 10)}</span>
                 </div>
                 <h4 className={`text-xs font-bold transition-colors line-clamp-2 mb-2 leading-snug ${
-                  isDark ? 'text-white group-hover:text-[#e50914]' : 'text-slate-900 group-hover:text-[#e50914]'
+                  isDark ? 'text-white group-hover:text-[#10b981]' : 'text-slate-900 group-hover:text-[#10b981]'
                 }`}>
                   {news.title}
                 </h4>

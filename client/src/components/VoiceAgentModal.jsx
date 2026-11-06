@@ -98,13 +98,13 @@ export default function VoiceAgentModal({ isOpen, onClose }) {
         {/* Header */}
         <div className="bg-[#1c1c1c] border-b border-[#2d2d2d] p-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-[#e50914] flex items-center justify-center text-white">
+            <div className="w-8 h-8 rounded-full bg-[#10b981] flex items-center justify-center text-white">
               <Volume2 className="w-4 h-4" />
             </div>
             <div>
               <h3 className="text-sm font-bold text-white flex items-center gap-1.5">
                 <span>SPACE Voice Agent</span>
-                <span className="text-[10px] px-1.5 py-0.2 rounded bg-[#e50914]/20 text-[#e50914] border border-[#e50914]/40 font-bold uppercase">
+                <span className="text-[10px] px-1.5 py-0.2 rounded bg-[#10b981]/20 text-[#10b981] border border-[#10b981]/40 font-bold uppercase">
                   ElevenLabs
                 </span>
               </h3>
@@ -123,19 +123,19 @@ export default function VoiceAgentModal({ isOpen, onClose }) {
           <div className="relative w-28 h-28 mx-auto my-4 flex items-center justify-center">
             <div className={`absolute inset-0 rounded-full bg-gradient-to-tr from-[#222222] via-[#10b981] to-transparent ${isPlaying ? 'animate-spin' : ''
               } opacity-50 blur-lg`} />
-            <div className="relative w-24 h-24 rounded-full bg-black border-2 border-[#e50914] flex items-center justify-center shadow-2xl">
+            <div className="relative w-24 h-24 rounded-full bg-black border-2 border-[#10b981] flex items-center justify-center shadow-2xl">
               {isPlaying ? (
                 <div className="flex items-center gap-1">
                   {[20, 35, 50, 30, 45].map((h, i) => (
                     <span
                       key={i}
-                      className="w-1 bg-[#e50914] rounded-full animate-pulse"
+                      className="w-1 bg-[#10b981] rounded-full animate-pulse"
                       style={{ height: `${h}px`, animationDuration: `${0.3 + i * 0.1}s` }}
                     />
                   ))}
                 </div>
               ) : (
-                <Volume2 className="w-10 h-10 text-[#e50914]" />
+                <Volume2 className="w-10 h-10 text-[#10b981]" />
               )}
             </div>
           </div>
@@ -150,7 +150,7 @@ export default function VoiceAgentModal({ isOpen, onClose }) {
               <button
                 key={idx}
                 onClick={() => { setInputText(p); handleSpeak(p); }}
-                className="w-full text-left p-2 rounded-lg bg-[#1c1c1c] hover:bg-[#e50914]/15 border border-[#2d2d2d] hover:border-[#e50914]/40 text-[11px] text-[#b3b3b3] hover:text-white transition-colors"
+                className="w-full text-left p-2 rounded-lg bg-[#1c1c1c] hover:bg-[#10b981]/15 border border-[#2d2d2d] hover:border-[#10b981]/40 text-[11px] text-[#b3b3b3] hover:text-white transition-colors"
               >
                 "{p}"
               </button>
@@ -162,7 +162,7 @@ export default function VoiceAgentModal({ isOpen, onClose }) {
             rows={2}
             value={inputText}
             onChange={e => setInputText(e.target.value)}
-            className="w-full p-2.5 rounded-lg bg-[#181818] border border-[#333333] text-xs text-white outline-none focus:border-[#e50914] mb-4"
+            className="w-full p-2.5 rounded-lg bg-[#181818] border border-[#333333] text-xs text-white outline-none focus:border-[#10b981] mb-4"
             placeholder="Type text for ElevenLabs voice generation..."
           />
 
@@ -170,7 +170,7 @@ export default function VoiceAgentModal({ isOpen, onClose }) {
           <div className="flex items-center gap-3 w-full">
             <button
               onClick={handleToggleMic}
-              className={`p-2.5 rounded-xl border transition-colors flex items-center justify-center ${isListening ? 'bg-[#e50914] text-white border-[#e50914] animate-pulse' : 'bg-[#2d2d2d] text-white border-[#5a5a5a] hover:bg-[#e50914]'
+              className={`p-2.5 rounded-xl border transition-colors flex items-center justify-center ${isListening ? 'bg-[#10b981] text-white border-[#10b981] animate-pulse' : 'bg-[#2d2d2d] text-white border-[#5a5a5a] hover:bg-[#10b981]'
                 }`}
               title="Voice Input (Mic)"
             >

@@ -74,7 +74,7 @@ export default function AuthModal({ isOpen, onClose }) {
 
         {/* Brand with Official Sahyadri Logo */}
         <div className="flex items-center gap-3 mb-6">
-          <div className="w-12 h-12 rounded-lg bg-white p-1 flex items-center justify-center border border-[#e50914]/40 overflow-hidden shadow-md shrink-0">
+          <div className="w-12 h-12 rounded-lg bg-white p-1 flex items-center justify-center border border-[#10b981]/40 overflow-hidden shadow-md shrink-0">
             <img
               src="/sahyadri-logo.jpg"
               alt="Sahyadri Logo"
@@ -84,7 +84,7 @@ export default function AuthModal({ isOpen, onClose }) {
           <div>
             <div className="flex items-center gap-1.5">
               <span className="text-base font-black text-white">SAHYADRI</span>
-              <span className="text-xs font-black text-[#e50914] px-1.5 py-0.2 rounded bg-[#e50914]/20 border border-[#e50914]/40">SPACE</span>
+              <span className="text-xs font-black text-[#10b981] px-1.5 py-0.2 rounded bg-[#10b981]/20 border border-[#10b981]/40">SPACE</span>
             </div>
             <p className="text-[10px] text-[#808080]">Placement and Career Portal for Engineers</p>
           </div>
@@ -121,14 +121,14 @@ export default function AuthModal({ isOpen, onClose }) {
             <button
               type="button"
               onClick={() => fillQuickCreds('student')}
-              className="flex-1 py-1.5 px-2 rounded bg-[#e50914] hover:bg-[#f40612] text-white text-[11px] font-bold text-center transition-colors"
+              className="flex-1 py-1.5 px-2 rounded bg-[#10b981] hover:bg-[#059669] text-white text-[11px] font-bold text-center transition-colors"
             >
               🎓 Student (Sanvith)
             </button>
             <button
               type="button"
               onClick={() => fillQuickCreds('faculty')}
-              className="flex-1 py-1.5 px-2 rounded bg-[#222222] hover:bg-[#e50914] text-white text-[11px] font-bold border border-[#333333] hover:border-[#e50914] text-center transition-colors"
+              className="flex-1 py-1.5 px-2 rounded bg-[#222222] hover:bg-[#10b981] text-white text-[11px] font-bold border border-[#333333] hover:border-[#10b981] text-center transition-colors"
             >
               🛡️ Placement Dean
             </button>
@@ -153,7 +153,7 @@ export default function AuthModal({ isOpen, onClose }) {
                     required
                     value={name}
                     onChange={e => setName(e.target.value)}
-                    className="w-full p-2.5 pl-8 rounded bg-[#1c1c1c] border border-[#5a5a5a] text-white outline-none focus:border-[#e50914]"
+                    className="w-full p-2.5 pl-8 rounded bg-[#1c1c1c] border border-[#5a5a5a] text-white outline-none focus:border-[#10b981]"
                     placeholder="Sanvith Rai"
                   />
                   <User className="w-3.5 h-3.5 text-[#808080] absolute left-2.5 top-3" />
@@ -166,7 +166,7 @@ export default function AuthModal({ isOpen, onClose }) {
                   type="text"
                   value={usn}
                   onChange={e => setUsn(e.target.value)}
-                  className="w-full p-2.5 rounded bg-[#1c1c1c] border border-[#5a5a5a] text-white outline-none focus:border-[#e50914]"
+                  className="w-full p-2.5 rounded bg-[#1c1c1c] border border-[#5a5a5a] text-white outline-none focus:border-[#10b981]"
                   placeholder="4SF22CI048"
                 />
               </div>
@@ -181,7 +181,7 @@ export default function AuthModal({ isOpen, onClose }) {
                 required
                 value={email}
                 onChange={e => setEmail(e.target.value)}
-                className="w-full p-2.5 pl-8 rounded bg-[#1c1c1c] border border-[#5a5a5a] text-white outline-none focus:border-[#e50914]"
+                className="w-full p-2.5 pl-8 rounded bg-[#1c1c1c] border border-[#5a5a5a] text-white outline-none focus:border-[#10b981]"
                 placeholder="sanvith.rai.ci24@sahyadri.edu.in"
               />
               <Mail className="w-3.5 h-3.5 text-[#808080] absolute left-2.5 top-3" />
@@ -196,7 +196,7 @@ export default function AuthModal({ isOpen, onClose }) {
                 required
                 value={password}
                 onChange={e => setPassword(e.target.value)}
-                className="w-full p-2.5 pl-8 rounded bg-[#1c1c1c] border border-[#5a5a5a] text-white outline-none focus:border-[#e50914]"
+                className="w-full p-2.5 pl-8 rounded bg-[#1c1c1c] border border-[#5a5a5a] text-white outline-none focus:border-[#10b981]"
                 placeholder="••••••••"
               />
               <Lock className="w-3.5 h-3.5 text-[#808080] absolute left-2.5 top-3" />
@@ -220,7 +220,7 @@ export default function AuthModal({ isOpen, onClose }) {
               <button
                 type="button"
                 onClick={() => setIsRegister(false)}
-                className="text-[#e50914] font-bold hover:underline"
+                className="text-[#10b981] font-bold hover:underline"
               >
                 Sign In
               </button>
@@ -231,7 +231,7 @@ export default function AuthModal({ isOpen, onClose }) {
               <button
                 type="button"
                 onClick={() => setIsRegister(true)}
-                className="text-[#e50914] font-bold hover:underline"
+                className="text-[#10b981] font-bold hover:underline"
               >
                 Register
               </button>

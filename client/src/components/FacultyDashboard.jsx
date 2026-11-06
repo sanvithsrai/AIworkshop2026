@@ -277,7 +277,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
       
       {/* Toast Notification */}
       {toastMsg && (
-        <div className="fixed top-20 right-6 z-50 bg-[#e50914] text-white px-4 py-2.5 rounded-xl shadow-2xl text-xs font-bold flex items-center gap-2 animate-in fade-in slide-in-from-top-4">
+        <div className="fixed top-20 right-6 z-50 bg-[#10b981] text-white px-4 py-2.5 rounded-xl shadow-2xl text-xs font-bold flex items-center gap-2 animate-in fade-in slide-in-from-top-4">
           <CheckCircle2 className="w-4 h-4 text-white" />
           <span>{toastMsg}</span>
         </div>
@@ -289,7 +289,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
       }`}>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="flex items-center gap-4">
-            <div className="w-14 h-14 rounded-full bg-[#e50914] flex items-center justify-center font-black text-2xl text-white shadow-xl shrink-0">
+            <div className="w-14 h-14 rounded-full bg-[#10b981] flex items-center justify-center font-black text-2xl text-white shadow-xl shrink-0">
               <ShieldCheck className="w-8 h-8 text-white" />
             </div>
             <div>
@@ -302,7 +302,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                 </span>
               </div>
               <p className={`text-xs ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
-                Managed by <strong className="text-[#e50914]">Prof. Rashmi Bhandary</strong> (Dean – Career Guidance, Training & Placement Cell)
+                Managed by <strong className="text-[#10b981]">Prof. Rashmi Bhandary</strong> (Dean – Career Guidance, Training & Placement Cell)
               </p>
             </div>
           </div>
@@ -321,7 +321,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                 isDark ? 'bg-[#222222] border-[#333333] text-white hover:bg-[#2d2d2d]' : 'bg-slate-100 border-slate-300 text-slate-800 hover:bg-slate-200'
               }`}
             >
-              <BookOpen className="w-4 h-4 text-[#e50914]" />
+              <BookOpen className="w-4 h-4 text-[#10b981]" />
               <span>+ New Exam</span>
             </button>
             <button
@@ -351,14 +351,14 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
             isDark ? 'bg-black/40 border-[#2d2d2d]' : 'bg-slate-50 border-slate-200'
           }`}>
             <span className={`text-[10px] block uppercase font-semibold ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Total MCQs in Bank</span>
-            <span className={`text-2xl font-black text-[#e50914]`}>{questions.length || 100}</span>
+            <span className={`text-2xl font-black text-[#10b981]`}>{questions.length || 100}</span>
             <span className={`text-[10px] block mt-0.5 ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Across 20 Modules</span>
           </div>
           <div className={`p-3 rounded-lg border ${
             isDark ? 'bg-black/40 border-[#2d2d2d]' : 'bg-slate-50 border-slate-200'
           }`}>
             <span className={`text-[10px] block uppercase font-semibold ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Batch Average</span>
-            <span className="text-2xl font-black text-[#e50914]">{metrics.avgScore || 0}%</span>
+            <span className="text-2xl font-black text-[#10b981]">{metrics.avgScore || 0}%</span>
             <span className={`text-[10px] block mt-0.5 ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Aptitude & Technical</span>
           </div>
           <div className={`p-3 rounded-lg border ${
@@ -377,7 +377,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
           onClick={() => setActiveTab('questions')}
           className={`px-4 py-2.5 rounded-xl text-xs font-bold flex items-center gap-2 transition-all ${
             activeTab === 'questions'
-              ? 'bg-[#e50914] text-white shadow-lg shadow-[#e50914]/25'
+              ? 'bg-[#10b981] text-white shadow-lg shadow-[#10b981]/25'
               : isDark 
                 ? 'bg-[#181818] border border-[#2d2d2d] text-[#808080] hover:text-white' 
                 : 'bg-white border border-slate-300 text-slate-700 hover:text-black shadow-sm'
@@ -394,7 +394,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
           onClick={() => setActiveTab('students')}
           className={`px-4 py-2.5 rounded-xl text-xs font-bold flex items-center gap-2 transition-all ${
             activeTab === 'students'
-              ? 'bg-[#e50914] text-white shadow-lg shadow-[#e50914]/25'
+              ? 'bg-[#10b981] text-white shadow-lg shadow-[#10b981]/25'
               : isDark 
                 ? 'bg-[#181818] border border-[#2d2d2d] text-[#808080] hover:text-white' 
                 : 'bg-white border border-slate-300 text-slate-700 hover:text-black shadow-sm'
@@ -418,7 +418,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-6">
             <div>
               <h3 className={`text-lg font-bold flex items-center gap-2 ${isDark ? 'text-white' : 'text-slate-900'}`}>
-                <FileEdit className="w-5 h-5 text-[#e50914]" />
+                <FileEdit className="w-5 h-5 text-[#10b981]" />
                 <span>MCQ Question Bank Management Studio</span>
               </h3>
               <p className={`text-xs mt-0.5 ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
@@ -433,7 +433,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                 <select
                   value={selectedExamFilter}
                   onChange={e => setSelectedExamFilter(e.target.value)}
-                  className={`w-full rounded-lg px-3 py-2 text-xs outline-none focus:border-[#e50914] border ${
+                  className={`w-full rounded-lg px-3 py-2 text-xs outline-none focus:border-[#10b981] border ${
                     isDark ? 'bg-[#181818] border-[#2d2d2d] text-white' : 'bg-white border-slate-300 text-slate-900'
                   }`}
                 >
@@ -451,7 +451,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                   value={questionSearch}
                   onChange={e => setQuestionSearch(e.target.value)}
                   placeholder="Search question text / option..."
-                  className={`w-full rounded-lg px-3 py-2 pl-8 text-xs outline-none focus:border-[#e50914] border ${
+                  className={`w-full rounded-lg px-3 py-2 pl-8 text-xs outline-none focus:border-[#10b981] border ${
                     isDark ? 'bg-[#181818] border-[#2d2d2d] text-white' : 'bg-white border-slate-300 text-slate-900'
                   }`}
                 />
@@ -471,7 +471,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
           {/* Questions List */}
           {questionsLoading ? (
             <div className="py-16 text-center">
-              <div className="w-8 h-8 border-2 border-[#e50914] border-t-transparent rounded-full animate-spin mx-auto mb-2" />
+              <div className="w-8 h-8 border-2 border-[#10b981] border-t-transparent rounded-full animate-spin mx-auto mb-2" />
               <p className={`text-xs ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>Loading question bank...</p>
             </div>
           ) : filteredQuestions.length === 0 ? (
@@ -498,10 +498,10 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                   {/* Top Bar of Card */}
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
                     <div className="flex items-center gap-2 flex-wrap">
-                      <span className="w-6 h-6 rounded-full bg-[#e50914] text-white font-bold text-xs flex items-center justify-center shrink-0">
+                      <span className="w-6 h-6 rounded-full bg-[#10b981] text-white font-bold text-xs flex items-center justify-center shrink-0">
                         {idx + 1}
                       </span>
-                      <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-[#e50914]/15 text-[#e50914] border border-[#e50914]/30">
+                      <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-[#10b981]/15 text-[#10b981] border border-[#10b981]/30">
                         {q.exam_title || 'Mock Test'}
                       </span>
                       <span className={`text-[10px] font-mono ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
@@ -516,7 +516,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                           isDark ? 'bg-[#222222] border-[#333333] text-white hover:bg-[#2d2d2d]' : 'bg-white border-slate-300 text-slate-800 hover:bg-slate-100 shadow-sm'
                         }`}
                       >
-                        <FileEdit className="w-3.5 h-3.5 text-[#e50914]" />
+                        <FileEdit className="w-3.5 h-3.5 text-[#10b981]" />
                         <span>Edit Question</span>
                       </button>
 
@@ -593,7 +593,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
             <div>
               <h3 className={`text-lg font-bold flex items-center gap-2 ${isDark ? 'text-white' : 'text-slate-900'}`}>
-                <Users className="w-5 h-5 text-[#e50914]" />
+                <Users className="w-5 h-5 text-[#10b981]" />
                 <span>Student Performance & Placement Readiness Directory</span>
               </h3>
               <p className={`text-xs mt-0.5 ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
@@ -609,7 +609,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                   value={studentSearch}
                   onChange={e => setStudentSearch(e.target.value)}
                   placeholder="Search USN / Name..."
-                  className={`w-full rounded-lg px-3 py-1.5 pl-8 text-xs outline-none focus:border-[#e50914] border ${
+                  className={`w-full rounded-lg px-3 py-1.5 pl-8 text-xs outline-none focus:border-[#10b981] border ${
                     isDark ? 'bg-[#181818] border-[#2d2d2d] text-white' : 'bg-white border-slate-300 text-slate-900'
                   }`}
                 />
@@ -619,7 +619,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
               <select
                 value={selectedBranch}
                 onChange={e => setSelectedBranch(e.target.value)}
-                className={`rounded-lg px-2.5 py-1.5 text-xs outline-none focus:border-[#e50914] border ${
+                className={`rounded-lg px-2.5 py-1.5 text-xs outline-none focus:border-[#10b981] border ${
                   isDark ? 'bg-[#181818] border-[#2d2d2d] text-white' : 'bg-white border-slate-300 text-slate-900'
                 }`}
               >
@@ -654,30 +654,30 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                       <span className={`font-bold block ${isDark ? 'text-white' : 'text-slate-900'}`}>{student.name}</span>
                       <span className={`text-[10px] ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>{student.email}</span>
                     </td>
-                    <td className="py-3 px-4 font-mono font-bold text-[#e50914]">
+                    <td className="py-3 px-4 font-mono font-bold text-[#10b981]">
                       {student.usn}
                     </td>
                     <td className={`py-3 px-4 ${isDark ? 'text-[#b3b3b3]' : 'text-slate-700'}`}>
                       {student.branch}
                     </td>
-                    <td className="py-3 px-4 font-bold text-[#e50914]">
+                    <td className="py-3 px-4 font-bold text-[#10b981]">
                       {student.cgpa}
                     </td>
                     <td className={`py-3 px-4 font-semibold ${isDark ? 'text-white' : 'text-slate-900'}`}>
                       {student.testsCompleted}
                     </td>
-                    <td className="py-3 px-4 font-bold text-[#e50914]">
+                    <td className="py-3 px-4 font-bold text-[#10b981]">
                       {student.averageScore}%
                     </td>
                     <td className="py-3 px-4">
                       <div className="flex items-center gap-2">
                         <div className={`w-16 h-2 rounded-full overflow-hidden ${isDark ? 'bg-[#2d2d2d]' : 'bg-slate-200'}`}>
                           <div
-                            className="h-full bg-[#e50914] rounded-full"
+                            className="h-full bg-[#10b981] rounded-full"
                             style={{ width: `${student.readinessScore}%` }}
                           />
                         </div>
-                        <span className="font-bold text-[11px] text-[#e50914]">{student.readinessScore}%</span>
+                        <span className="font-bold text-[11px] text-[#10b981]">{student.readinessScore}%</span>
                       </div>
                     </td>
                     <td className="py-3 px-4">
@@ -706,7 +706,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
             <div className="flex items-center justify-between pb-4 mb-4 border-b border-slate-200 dark:border-[#2d2d2d]">
               <div>
                 <h3 className={`text-lg font-bold flex items-center gap-2 ${isDark ? 'text-white' : 'text-slate-900'}`}>
-                  <FileEdit className="w-5 h-5 text-[#e50914]" />
+                  <FileEdit className="w-5 h-5 text-[#10b981]" />
                   <span>{editingQuestion ? 'Modify Existing Question' : 'Create New MCQ Question'}</span>
                 </h3>
                 <p className={`text-xs ${isDark ? 'text-[#808080]' : 'text-slate-500'}`}>
@@ -732,7 +732,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                   required
                   value={formExamId}
                   onChange={e => setFormExamId(e.target.value)}
-                  className={`w-full p-2.5 rounded-lg border focus:border-[#e50914] outline-none ${
+                  className={`w-full p-2.5 rounded-lg border focus:border-[#10b981] outline-none ${
                     isDark ? 'bg-[#1c1c1c] border-[#333333] text-white' : 'bg-white border-slate-300 text-slate-900'
                   }`}
                 >
@@ -753,7 +753,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                   value={formQuestionText}
                   onChange={e => setFormQuestionText(e.target.value)}
                   placeholder="e.g. A train running at the speed of 60 km/hr crosses a pole in 9 seconds. What is the length of the train?"
-                  className={`w-full p-2.5 rounded-lg border focus:border-[#e50914] outline-none ${
+                  className={`w-full p-2.5 rounded-lg border focus:border-[#10b981] outline-none ${
                     isDark ? 'bg-[#1c1c1c] border-[#333333] text-white' : 'bg-white border-slate-300 text-slate-900'
                   }`}
                 />
@@ -771,7 +771,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                     value={formOptionA}
                     onChange={e => setFormOptionA(e.target.value)}
                     placeholder="Choice A..."
-                    className={`w-full p-2 rounded-lg border focus:border-[#e50914] outline-none ${
+                    className={`w-full p-2 rounded-lg border focus:border-[#10b981] outline-none ${
                       isDark ? 'bg-[#1c1c1c] border-[#333333] text-white' : 'bg-white border-slate-300 text-slate-900'
                     }`}
                   />
@@ -787,7 +787,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                     value={formOptionB}
                     onChange={e => setFormOptionB(e.target.value)}
                     placeholder="Choice B..."
-                    className={`w-full p-2 rounded-lg border focus:border-[#e50914] outline-none ${
+                    className={`w-full p-2 rounded-lg border focus:border-[#10b981] outline-none ${
                       isDark ? 'bg-[#1c1c1c] border-[#333333] text-white' : 'bg-white border-slate-300 text-slate-900'
                     }`}
                   />
@@ -805,7 +805,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                     value={formOptionC}
                     onChange={e => setFormOptionC(e.target.value)}
                     placeholder="Choice C..."
-                    className={`w-full p-2 rounded-lg border focus:border-[#e50914] outline-none ${
+                    className={`w-full p-2 rounded-lg border focus:border-[#10b981] outline-none ${
                       isDark ? 'bg-[#1c1c1c] border-[#333333] text-white' : 'bg-white border-slate-300 text-slate-900'
                     }`}
                   />
@@ -820,7 +820,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                     value={formOptionD}
                     onChange={e => setFormOptionD(e.target.value)}
                     placeholder="Choice D..."
-                    className={`w-full p-2 rounded-lg border focus:border-[#e50914] outline-none ${
+                    className={`w-full p-2 rounded-lg border focus:border-[#10b981] outline-none ${
                       isDark ? 'bg-[#1c1c1c] border-[#333333] text-white' : 'bg-white border-slate-300 text-slate-900'
                     }`}
                   />
@@ -857,7 +857,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                     max="20"
                     value={formMarks}
                     onChange={e => setFormMarks(e.target.value)}
-                    className={`w-full p-2 rounded-lg border focus:border-[#e50914] outline-none ${
+                    className={`w-full p-2 rounded-lg border focus:border-[#10b981] outline-none ${
                       isDark ? 'bg-[#1c1c1c] border-[#333333] text-white' : 'bg-white border-slate-300 text-slate-900'
                     }`}
                   />
@@ -874,7 +874,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                   value={formExplanation}
                   onChange={e => setFormExplanation(e.target.value)}
                   placeholder="e.g. Speed = 60 * (5/18) = 50/3 m/sec. Length = Speed * Time = (50/3) * 9 = 150 meters."
-                  className={`w-full p-2 rounded-lg border focus:border-[#e50914] outline-none ${
+                  className={`w-full p-2 rounded-lg border focus:border-[#10b981] outline-none ${
                     isDark ? 'bg-[#1c1c1c] border-[#333333] text-white' : 'bg-white border-slate-300 text-slate-900'
                   }`}
                 />
@@ -926,7 +926,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                   value={newExamTitle}
                   onChange={e => setNewExamTitle(e.target.value)}
                   placeholder="e.g. Amazon & Microsoft DSA Diagnostic Test"
-                  className={`w-full p-2 rounded border focus:border-[#e50914] outline-none ${
+                  className={`w-full p-2 rounded border focus:border-[#10b981] outline-none ${
                     isDark ? 'bg-[#1c1c1c] border-[#333333] text-white' : 'bg-white border-slate-300 text-slate-900'
                   }`}
                 />
@@ -938,7 +938,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                   <select
                     value={newExamCategory}
                     onChange={e => setNewExamCategory(e.target.value)}
-                    className={`w-full p-2 rounded border focus:border-[#e50914] outline-none ${
+                    className={`w-full p-2 rounded border focus:border-[#10b981] outline-none ${
                       isDark ? 'bg-[#1c1c1c] border-[#333333] text-white' : 'bg-white border-slate-300 text-slate-900'
                     }`}
                   >
@@ -953,7 +953,7 @@ export default function FacultyDashboard({ onOpenCreateExam, onOpenCreateNewslet
                   <select
                     value={newExamDifficulty}
                     onChange={e => setNewExamDifficulty(e.target.value)}
-                    className={`w-full p-2 rounded border focus:border-[#e50914] outline-none ${
+                    className={`w-full p-2 rounded border focus:border-[#10b981] outline-none ${
                       isDark ? 'bg-[#1c1c1c] border-[#333333] text-white' : 'bg-white border-slate-300 text-slate-900'
                     }`}
                   >
