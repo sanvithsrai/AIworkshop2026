@@ -130,7 +130,7 @@ function MainApp() {
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 w-full max-w-full overflow-x-hidden">
+      <main className="flex-1 w-full max-w-full overflow-x-hidden pb-20 lg:pb-8">
         {activeTab === 'tests' && (
           <div>
             {/* Hero Section */}
@@ -310,7 +310,7 @@ function MainApp() {
       </main>
 
       {/* Floating AI Chatbot Action Button (Docked bottom-right without blocking content) */}
-      <div className="fixed bottom-5 right-5 z-40">
+      <div className="fixed bottom-20 lg:bottom-5 right-4 lg:right-5 z-40">
         <button
           onClick={() => setChatbotOpen(true)}
           className="w-12 h-12 rounded-full bg-[#10b981] hover:bg-[#059669] text-white flex items-center justify-center shadow-2xl hover:scale-105 transition-all shadow-[#10b981]/40 border-2 border-white/20"
@@ -322,7 +322,7 @@ function MainApp() {
       </div>
 
       {/* Footer with Official Logo & Links */}
-      <footer className={`border-t py-12 px-4 sm:px-6 lg:px-8 text-xs select-none transition-colors ${
+      <footer className={`border-t py-12 mb-16 lg:mb-0 px-4 sm:px-6 lg:px-8 text-xs select-none transition-colors ${
         isDark ? 'bg-black border-[#2d2d2d] text-[#b3b3b3]' : 'bg-slate-100 border-slate-200 text-slate-600'
       }`}>
         <div className="max-w-7xl mx-auto">
