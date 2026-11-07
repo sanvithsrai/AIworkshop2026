@@ -102,7 +102,7 @@ The repository includes [`vercel.json`](./vercel.json) and [`api/index.js`](./ap
 2. Select repository **`sanvithsrai/AIworkshop2026`** and click **Import**.
 3. Framework preset: **Vite** (or **Other**).
 4. Environment variables (optional):
-   - `JWT_SECRET`: `sahyadri_placement_jwt_secret_2026`
+   - `JWT_SECRET`: *(A secure random string for JWT signing)*
    - `GEMINI_API_KEY`: *(Optional Google Gemini key)*
    - `ELEVENLABS_API_KEY`: *(Optional ElevenLabs key)*
    - `NEWSDATA_API_KEY`: *(Optional NewsData key)*
@@ -144,7 +144,7 @@ vercel --prod
 
 | Service | Endpoint / URL | Purpose | Status |
 | :--- | :--- | :--- | :--- |
-| **Supabase** | `https://txvpbodhpjmacurczdar.supabase.co` | Cloud PostgreSQL, Database Sync & Auth | Connected |
+| **Supabase** | `https://your-project.supabase.co` | Cloud PostgreSQL, Database Sync & Auth | Connected |
 | **Google Gemini** | `gemini-2.5-flash` | Placement Chatbot & Career Guidance | Active |
 | **ElevenLabs** | `eleven_multilingual_v2` | HD Voice Speech Synthesis & Voice Agent | Active |
 | **NewsData.io** | `newsdata.io/api/1/news` | Live Hackathons & Tech Events Feed | Active |

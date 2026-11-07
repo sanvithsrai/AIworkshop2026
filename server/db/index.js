@@ -5,7 +5,7 @@ const { createClient } = require('@supabase/supabase-js');
 const seedData = require('./seedData');
 
 // Supabase configuration
-const SUPABASE_URL = process.env.SUPABASE_URL || 'https://txvpbodhpjmacurczdar.supabase.co';
+const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_KEY;
 let supabase = null;
 try {
