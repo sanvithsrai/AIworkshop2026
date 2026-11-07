@@ -277,7 +277,7 @@ function MainApp() {
 
         {/* Tab 5: Study Materials */}
         {activeTab === 'materials' && (
-          <StudyMaterials materials={materials} />
+          <StudyMaterials materials={materials} onRefresh={fetchData} />
         )}
 
         {/* Tab 6: Hackathons */}

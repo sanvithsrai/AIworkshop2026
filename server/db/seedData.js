@@ -776,63 +776,126 @@ Over 1,200 students participated in our bi-annual Aptitude Arena. The average sc
 
   study_materials: [
     {
-      id: "mat_01",
-      title: "Comprehensive Quantitative Aptitude Formula Handbook",
-      category: "Aptitude",
-      description: "All 18 chapters summarized: Profit & Loss, Speed-Time-Distance, Permutations, Probability, Work & Wages, and Mixtures with solved sample problems.",
-      read_time: "25 min read",
-      tags: "Formulas, Cheat Sheet, Math Shortcuts",
-      download_url: "#",
-      content: `### Top Formulas for Campus Placement Aptitude
-1. **Speed, Distance & Time**: Average speed when distances are equal = 2xy / (x + y).
-2. **Relative Speed**: Same direction = |S1 - S2|; Opposite direction = S1 + S2.
-3. **Compound Interest**: A = P(1 + r/100)^n. Difference between CI and SI for 2 years = P(r/100)^2.
-4. **Work & Time**: If A completes in X days and B in Y days, together they take (X * Y) / (X + Y) days.`
+        "id": "mat_01",
+        "title": "Comprehensive Quantitative Aptitude Formula Handbook",
+        "category": "Aptitude",
+        "description": "All 18 chapters summarized: Profit & Loss, Speed-Time-Distance, Permutations, Probability, Work & Wages, and Mixtures with mental math shortcuts.",
+        "read_time": "25 min read",
+        "tags": "Aptitude, Formulas, Math Shortcuts, Campus Placement",
+        "download_url": "#",
+        "content_type": "both",
+        "content": "### Top Formulas & Shortcuts for Campus Placement Aptitude\n\n1. **Speed, Distance & Time**:\n   - Average Speed when distances are equal = 2xy / (x + y)\n   - Relative Speed: Same direction = |S1 - S2|; Opposite direction = S1 + S2\n   - Train crossing platform: Time = (Length of Train + Length of Platform) / Train Speed\n\n2. **Work, Wages & Efficiency**:\n   - If A completes in X days and B in Y days: Together = (X * Y) / (X + Y) days\n   - Efficiency Rule: Ratio of efficiency is inverse to the ratio of time taken (E1/E2 = T2/T1)\n   - Pipes & Cisterns: Net flow = 1/Inlet1 + 1/Inlet2 - 1/Leak\n\n3. **Compound Interest & Simple Interest**:\n   - Simple Interest: SI = (P * R * T) / 100\n   - Compound Interest: A = P(1 + R/100)^T\n   - Difference between CI and SI for 2 years = P * (R/100)^2\n   - Difference for 3 years = P * (R/100)^2 * (3 + R/100)\n\n4. **Permutations, Combinations & Probability**:\n   - nPr = n! / (n - r)! | nCr = n! / [r! * (n - r)!]\n   - Circular arrangements of n items = (n - 1)!\n   - Probability P(E) = Favorable Outcomes / Total Sample Space",
+        "blog_url": "https://www.geeksforgeeks.org/quantitative-aptitude-cheat-sheet/",
+        "blog_title": "Quantitative Aptitude Complete Cheat Sheet & Shortcuts for Placements",
+        "blog_source": "GeeksforGeeks",
+        "blog_summary": "Comprehensive guide detailing mental calculation techniques, Vedic math shortcuts, and step-by-step solutions for TCS, Infosys, and Cognizant placement tests."
     },
     {
-      id: "mat_02",
-      title: "Sahyadri Japan Connect: JLPT N5 Essential 100 Kanji & Vocabulary Guide",
-      category: "Japanese",
-      description: "Curated by Sahyadri Japanese trainers. Includes strokes, onyomi, kunyomi, meaning, and business sentence examples required by Japanese recruiters.",
-      read_time: "30 min read",
-      tags: "JLPT N5, Kanji, Japanese, Zenken",
-      download_url: "#",
-      content: `### Must-Know JLPT N5 Kanji for Placement Interviews
-- **人** (hito / jin): Person (例: 日本人 = Japanese person, インド人 = Indian person)
-- **大** (oo / dai): Big (例: 大学 = Daigaku = University)
-- **学** (gaku): Study (例: 学生 = Gakusei = Student)
-- **先** (saki / sen): Previous / Ahead (例: 先生 = Sensei = Teacher)
-- **会** (kai): Meeting (例: 会社 = Kaisha = Company, 会議 = Kaigi = Meeting)
-- **社** (sha): Shrine / Society (例: 社長 = Shachou = Company President)`
+        "id": "mat_02",
+        "title": "Sahyadri Japan Connect: JLPT N5 Essential Kanji & Grammar Guide",
+        "category": "Japanese",
+        "description": "Curated by Sahyadri Japanese trainers. Includes strokes, onyomi, kunyomi, JLPT particles (は, が, を, に, で), and professional business dialogue examples.",
+        "read_time": "30 min read",
+        "tags": "Japanese, JLPT N5, Kanji, Grammar, Belc Japan, Zenken",
+        "download_url": "#",
+        "content_type": "both",
+        "content": "### Must-Know JLPT N5 Kanji & Grammar Rules for Bilingual Placement\n\n1. **Essential Kanji Fundamentals**:\n   - **人** (hito / jin): Person (例: 日本人 = Nihonjin, インド人 = Indojin)\n   - **大** (oo / dai): Big (例: 大学 = Daigaku, 大学生 = College Student)\n   - **学** (gaku): Study (例: 学校 = Gakkou, 学生 = Gakusei)\n   - **先** (saki / sen): Ahead / Previous (例: 先生 = Sensei)\n   - **会** (kai / a-u): Meet / Company (例: 会社 = Kaisha, 会話 = Kaiwa)\n   - **社** (sha): Society / Firm (例: 社員 = Shain, 社長 = Shachou)\n\n2. **Core Placement Particles**:\n   - **は (wa)**: Topic marker (\"Watashi wa enjinia desu\" - I am an engineer).\n   - **が (ga)**: Subject marker / emphasis (\"Kono puroguramu ga ugokimasu\" - This program runs).\n   - **を (o)**: Direct object marker (\"Koudo o kakimasu\" - I write code).\n   - **に (ni)**: Specific time or destination target (\"Toukyou ni ikimasu\" - I go to Tokyo).\n   - **で (de)**: Location of action / tool used (\"Python de kaihatsu shimasu\" - I develop with Python).\n\n3. **Key Interview Expressions**:\n   - はじめまして、よろしくお願いします (Hajimemashite, yoroshiku onegaishimasu)\n   - 自己紹介させていただきます (Jiko shoukai sasete itadakimasu) - Allow me to introduce myself.",
+        "blog_url": "https://jlptsensei.com/jlpt-n5-grammar-list/",
+        "blog_title": "Complete JLPT N5 Grammar & Sentence Architecture Master Guide",
+        "blog_source": "JLPT Sensei",
+        "blog_summary": "A structured breakdown of all 90+ N5 grammar rules, particle diagrams, sentence order exercises, and common pitfalls for Japanese bilingual campus drives."
     },
     {
-      id: "mat_03",
-      title: "Data Structures & Algorithms Cheat Sheet (Blind 75 & Placement Top 100)",
-      category: "Technical",
-      description: "Detailed pattern guide: Two Pointers, Sliding Window, Fast & Slow Pointers, Monotonic Stack, Backtracking, and DP state transitions.",
-      read_time: "45 min read",
-      tags: "DSA, LeetCode, C++, Java, Python",
-      download_url: "#",
-      content: `### Algorithm Patterns Checklist
-1. **Sliding Window**: Subarray with target sum, longest substring without repeating characters.
-2. **Two Pointers**: Trapping rainwater, 3Sum, container with most water.
-3. **Tree BFS/DFS**: Level-order traversal, maximum path sum, invert binary tree.`
+        "id": "mat_03",
+        "title": "Data Structures & Algorithms Cheat Sheet (Blind 75 & Placement Top 100)",
+        "category": "Technical",
+        "description": "Algorithmic patterns: Two Pointers, Sliding Window, Monotonic Stack, Binary Search variations, Backtracking, and DP memoization templates.",
+        "read_time": "45 min read",
+        "tags": "DSA, LeetCode, Blind75, C++, Java, Python, FAANG",
+        "download_url": "#",
+        "content_type": "both",
+        "content": "### Algorithmic Patterns & Complexity Cheatsheet\n\n1. **Two Pointers & Sliding Window**:\n   - Opposites: Sorted array search, Container With Most Water, 3Sum [O(N)]\n   - Same Direction: Remove duplicates, Move zeroes [O(N)]\n   - Dynamic Sliding Window: Longest substring without repeating characters, Minimum window substring\n\n2. **Binary Search Edge Cases**:\n   - Standard: left = 0, right = n - 1; mid = left + (right - left) / 2\n   - Leftmost Boundary: if (nums[mid] >= target) right = mid; else left = mid + 1;\n   - Search on Rotated Array: Identify which half is sorted first, then binary search.\n\n3. **Tree & Graph Traversals**:\n   - BFS (Queue): Shortest path in unweighted graph, Level-order tree traversal.\n   - DFS (Recursion / Stack): Backtracking, Cycle detection (Visited + InStack state), Topological sort (Kahn's or DFS).\n\n4. **Dynamic Programming Decision Framework**:\n   - 1D State: Fibonacci, Climbing Stairs, House Robber [dp[i] = max(dp[i-1], dp[i-2] + val)]\n   - 2D Grid / Matrix: Unique paths, Minimum path sum [dp[i][j] = min(dp[i-1][j], dp[i][j-1]) + cost]\n   - Subsequence Matching: Longest Common Subsequence (LCS), Edit Distance",
+        "blog_url": "https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions",
+        "blog_title": "The Curated Blind-75 LeetCode Technical Interview Roadmap",
+        "blog_source": "LeetCode Discuss",
+        "blog_summary": "The definitive 75 technical questions mapped by conceptual pattern with visual dry-runs, edge case walk-throughs, and optimal code implementations."
     },
     {
-      id: "mat_04",
-      title: "HR & Technical Interview Master Guide (STAR Technique & Sahyadri FAQ)",
-      category: "Interview",
-      description: "Standard behavioral questions: Tell me about yourself, why this company, handling project conflicts, and salary negotiation tactics.",
-      read_time: "20 min read",
-      tags: "HR Round, Mock Interview, Behavioral, STAR",
-      download_url: "#",
-      content: `### STAR Response Architecture
-- **Situation**: Set the context clearly in 2 sentences.
-- **Task**: Explain the challenge or target you were responsible for.
-- **Action**: Highlight the specific technologies, architectural decisions, and steps YOU executed.
-- **Result**: Quantify the outcome (e.g., reduced query latency by 45%, increased accuracy to 94%).`
+        "id": "mat_04",
+        "title": "HR & Technical Interview Master Guide (STAR Technique & Sahyadri FAQ)",
+        "category": "Interview",
+        "description": "Architectural guidelines for behavioral interviews: Tell me about yourself, explaining production failures, resolving peer conflict, and salary negotiation.",
+        "read_time": "20 min read",
+        "tags": "Interview Prep, HR Round, STAR Method, Behavioral, Leadership",
+        "download_url": "#",
+        "content_type": "both",
+        "content": "### STAR Behavioral Response Blueprint\n\n1. **Situation (15% of answer)**:\n   - Provide concrete context: \"During our final-year IoT project where we built an automated smart grid monitor...\"\n   - Avoid vague generalities; anchor the story in a real timeline and environment.\n\n2. **Task (15% of answer)**:\n   - What was the specific obstacle or high-stakes deliverable?\n   - \"Our MQTT broker was dropping 30% of incoming sensor payloads during network spikes.\"\n\n3. **Action (55% of answer - Core Focus)**:\n   - What did YOU personally engineer?\n   - \"I implemented a QoS level 1 persistence layer, introduced RabbitMQ for backpressure queuing, and benchmarked load tests using k6.\"\n\n4. **Result (15% of answer)**:\n   - Quantified impact: \"Message loss dropped to 0.01%, latency reduced by 40%, and the system sustained 10,000 simulated nodes flawlessly.\"\n\n5. **Closing Questions to Ask Recruiters**:\n   - \"What are the engineering milestones your team aims to achieve in Q1?\"\n   - \"How do you evaluate code reviews and architecture proposals inside the squad?\"",
+        "blog_url": "https://www.themuse.com/advice/star-interview-method",
+        "blog_title": "How to Ace Any Behavioral Interview Using the STAR Method",
+        "blog_source": "The Muse Career Insights",
+        "blog_summary": "Comprehensive guide with 30+ real-world engineering examples demonstrating how to answer tough behavioral questions with clarity and quantitative evidence."
+    },
+    {
+        "id": "mat_05",
+        "title": "SQL & Relational Database Mastery (Window Functions & Indexing)",
+        "category": "Technical",
+        "description": "Deep dive into SQL query optimization: ROW_NUMBER(), DENSE_RANK(), B-Tree indexes, full table scans, ACID isolation levels, and normalization.",
+        "read_time": "35 min read",
+        "tags": "SQL, Database, PostgreSQL, MySQL, Indexing, Performance",
+        "download_url": "#",
+        "content_type": "both",
+        "content": "### Essential SQL Architecture & Window Functions\n\n1. **Window Functions Checklist**:\n   - ROW_NUMBER(): Assigns sequential integers starting at 1.\n   - RANK(): Leaves gaps when scores tie (1, 2, 2, 4).\n   - DENSE_RANK(): No gaps when scores tie (1, 2, 2, 3).\n   ```sql\n   SELECT student_name, score,\n          DENSE_RANK() OVER (PARTITION BY branch ORDER BY score DESC) as rank_in_branch\n   FROM students;\n   ```\n\n2. **Index Optimization & Execution Plans**:\n   - B-Tree Index: Optimal for equality (=) and range queries (<, >, BETWEEN).\n   - Composite Index: Leftmost prefix rule matters! INDEX(a, b, c) will NOT speed up WHERE b = 1.\n   - Covering Index: Including all SELECT columns in the index eliminates table heap access.\n\n3. **ACID Properties**:\n   - **Atomicity**: All or nothing transaction.\n   - **Consistency**: Preserves schema and foreign key constraints.\n   - **Isolation**: Prevents dirty reads and phantom reads across concurrent workers.\n   - **Durability**: Committed write-ahead logs (WAL) survive unexpected crash reboots.",
+        "blog_url": "https://use-the-index-luke.com/sql/anatomy",
+        "blog_title": "SQL Indexing and Query Performance Tuning for Developers",
+        "blog_source": "Use The Index, Luke!",
+        "blog_summary": "A visual, ground-level explanation of how relational databases read B-Trees, execute index scans, and how developers can eliminate slow query bottlenecks."
+    },
+    {
+        "id": "mat_06",
+        "title": "System Design & Operating Systems Interview Primer",
+        "category": "Technical",
+        "description": "Horizontal scalability, caching strategies with Redis, load balancer algorithms (Round Robin, Least Connection), database sharding, and CAP theorem.",
+        "read_time": "40 min read",
+        "tags": "System Design, OS, Concurrency, Caching, Microservices, Scale",
+        "download_url": "#",
+        "content_type": "both",
+        "content": "### High-Level Distributed Systems Architecture\n\n1. **CAP Theorem Trade-Offs**:\n   - **Consistency**: Every read receives the most recent write.\n   - **Availability**: Every request receives a non-error response.\n   - **Partition Tolerance**: System continues to operate despite dropped network packets.\n   - *In network partitions (P), you must choose between C (e.g., Spanner, CockroachDB) or A (e.g., Cassandra, DynamoDB).*\n\n2. **Caching Topologies**:\n   - **Cache-Aside**: Application reads cache; on miss, reads DB and updates cache.\n   - **Write-Through**: Application writes to cache, cache writes synchronously to DB.\n   - **Write-Back**: Application writes to cache, cache writes asynchronously in batches to DB.\n\n3. **Concurrency & Operating Systems**:\n   - **Process vs Thread**: Process has isolated virtual memory space; threads share heap and data segment within the parent process.\n   - **Deadlock Conditions (Coffman)**: Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait.",
+        "blog_url": "https://github.com/donnemartin/system-design-primer",
+        "blog_title": "An Open-Source Guide to Scalable Distributed Systems Architecture",
+        "blog_source": "System Design Primer",
+        "blog_summary": "Interactive repo with 250,000+ stars providing clear architectures for designing Twitter, URL shorteners, Uber, and YouTube at massive web scale."
+    },
+    {
+        "id": "mat_07",
+        "title": "Japanese Corporate Business Manners (ビジネスマナー & Jiko PR)",
+        "category": "Japanese",
+        "description": "Keigo levels (Sonkeigo, Kenjougo, Teineigo), meishi koukan (business card exchange), bowing etiquette (Eshaku, Keirei, Saikeirei), and email writing.",
+        "read_time": "25 min read",
+        "tags": "Japanese, Business Manners, Keigo, Corporate Etiquette, Belc",
+        "download_url": "#",
+        "content_type": "both",
+        "content": "### Japanese Corporate Manners & Communication Protocol\n\n1. **The Three Keigo Speech Registers**:\n   - **丁寧語 (Teineigo)**: Polite form (〜です, 〜ます, ございます).\n   - **尊敬語 (Sonkeigo)**: Respectful language elevating the customer or recruiter (例: いらっしゃる, おっしゃる, ご覧になる).\n   - **謙譲語 (Kenjougo)**: Humble language lowering yourself to show respect (例: 参る, 申す, 拝見する).\n\n2. **Bowing Protocols (お辞儀 - Ojigi)**:\n   - **会釈 (Eshaku - 15°)**: Casual greeting when passing colleagues in corridors.\n   - **敬礼 (Keirei - 30°)**: Standard business bow entering interview rooms and greeting clients.\n   - **最敬礼 (Saikeirei - 45°)**: Deep formal bow expressing profound gratitude or formal apologies.\n\n3. **Meishi Koukan (名刺交換 - Business Card Exchange)**:\n   - Hand card with both hands held below the recipient's card.\n   - Keep card oriented towards the receiver so they can read it upright.\n   - Never write on someone's business card in their presence.",
+        "blog_url": "https://matcha-jp.com/en/2665",
+        "blog_title": "Essential Japanese Business Etiquette: From Greetings to Interviews",
+        "blog_source": "Matcha Japan Guide",
+        "blog_summary": "Detailed cultural walkthrough explaining Japanese interview protocols, proper seating arrangements (Kamiza vs Shimoza), and polite phrasing."
+    },
+    {
+        "id": "mat_08",
+        "title": "Web Architecture & Full-Stack Engineering Masterclass",
+        "category": "Technical",
+        "description": "Node.js Event Loop phases, microtasks vs macrotasks, REST API Richardson Maturity Model, CORS headers, JWT auth cycles, and WebSockets.",
+        "read_time": "35 min read",
+        "tags": "Web Dev, Node.js, React, Architecture, HTTP, Full-Stack",
+        "download_url": "#",
+        "content_type": "both",
+        "content": "### Core Full-Stack & Web Performance Essentials\n\n1. **JavaScript Event Loop Cycle**:\n   - Call Stack -> Microtask Queue (Promises, queueMicrotask, MutationObserver) -> Macrotask Queue (setTimeout, setInterval, setImmediate, I/O polling).\n   - Microtasks are ALWAYS drained completely before the next macrotask is executed!\n\n2. **Modern Security & Authentication**:\n   - JWT Anatomy: Header (Alg + Type) . Payload (Claims) . Signature (HMAC-SHA256).\n   - Storing Auth Tokens: Avoid localStorage for sensitive tokens (vulnerable to XSS); prefer httpOnly, Secure, SameSite=Strict cookies.\n   - CORS Protocol: Preflight `OPTIONS` requests check `Access-Control-Allow-Origin` and permitted headers.\n\n3. **HTTP/2 & HTTP/3 Enhancements**:\n   - HTTP/1.1: Head-of-line blocking on single TCP connection.\n   - HTTP/2: Binary framing, multiplexed streams over one TCP connection.\n   - HTTP/3: Uses QUIC over UDP, zero head-of-line blocking across lost packets.",
+        "blog_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/How_the_Web_works",
+        "blog_title": "How the Web Works: Comprehensive Technical Overview",
+        "blog_source": "MDN Web Docs",
+        "blog_summary": "Mozilla's authoritative architectural overview explaining DNS queries, TCP/IP three-way handshakes, TLS handshakes, and asset rendering cycles."
     }
-  ],
+],
 
   recruiters: [
     {
